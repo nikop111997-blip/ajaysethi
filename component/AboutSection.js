@@ -13,10 +13,11 @@ export default function AboutSection() {
         {/* Left Column: Main Image */}
         <div className="relative w-full aspect-[4/5] md:aspect-square lg:aspect-[4/5] rounded-[2rem] overflow-hidden bg-gray-100 shadow-sm">
   <Image
-    src="/self.jpg"
+    src="/self2.jpg"
     alt="Ajay Sethi - Wellness Consultant"
     fill
     priority
+    sizes=""
     className="object-cover object-top scale-125 translate-y-22"
   />
 </div>
