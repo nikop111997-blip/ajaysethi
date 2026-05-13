@@ -76,7 +76,6 @@ export default function CorporateWellnessLandingPage() {
           alt="Corporate Wellness Keynote"
           fill
           className="object-cover object-center grayscale"
-          priority
         />
         {/* Dark gradient overlay: Starts dark at the bottom for text readability, fades to transparent at the top */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent"></div>

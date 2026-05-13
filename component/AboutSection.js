@@ -13,12 +13,12 @@ export default function AboutSection() {
         {/* Left Column: Main Image */}
         <div className="relative w-full aspect-[4/5] md:aspect-square lg:aspect-[4/5] rounded-[2rem] overflow-hidden bg-gray-100 shadow-sm">
   <Image
-    src="/self2.jpg"
+    src="/self2.webp"
     alt="Ajay Sethi - Wellness Consultant"
     fill
     priority
     sizes=""
-    className="object-cover object-top scale-125 translate-y-22"
+    className="object-cover object-top"
   />
 </div>
 
@@ -59,6 +59,7 @@ export default function AboutSection() {
             </Link>
 
           {/* Bottom Area: Stats & Secondary Image */}
+          <div className="hidden sm:block">
           <div className="w-full mt-16 flex flex-col sm:flex-row justify-between items-end gap-10 ">
             {/* Stats */}
             <div className="flex gap-12">
@@ -83,7 +84,7 @@ export default function AboutSection() {
               />
             </div>
           </div>
-
+        </div>
         </div>
       </div>
     </section>

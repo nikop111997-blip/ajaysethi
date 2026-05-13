@@ -140,7 +140,7 @@ export default function TestimonialsPage() {
   
   <div className="md:col-span-2 md:row-span-2 relative bg-neutral-200 rounded-xl overflow-hidden group">
     <Image
-      src="/tali2.jpg"
+      src="/engage.webp"
       alt="Ajay speaking on stage"
       fill
       className="object-cover group-hover:scale-105 transition-transform duration-700"

@@ -72,11 +72,10 @@ export default function WellnessBusinessCoachingPage() {
       <div className="absolute inset-0 z-0">
         {/* Replace src with an image representing business coaching, leadership, or mentoring */}
         <Image
-          src="/con.webp" 
+          src="/conn.webp" 
           alt="Wellness Business Coaching"
           fill
           className="object-cover object-top grayscale"
-          priority
         />
         {/* Dark gradient overlay: Starts dark at the bottom for text readability, fades to transparent at the top */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent"></div>
