@@ -72,7 +72,7 @@ export default function CorporateWellnessLandingPage() {
       <div className="absolute inset-0 z-0">
         {/* Replace src with an image representing a corporate setting, leadership, or a team workshop */}
         <Image
-          src="/back.jpg" 
+          src="/backns.webp" 
           alt="Corporate Wellness Keynote"
           fill
           className="object-cover object-center grayscale"
