@@ -70,10 +70,10 @@ export default function TestimonialCarousel() {
         
         {/* Header */}
         <div className="flex flex-col sm:flex-row items-center mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-5xl text-[#1a1a1a]  tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl text-[#1a1a1a]  tracking-tight mb-4 dark:text-gray-50">
             Stories of Lasting <span className="text-[#ff6a3d]">Transformation</span>
           </h2>
-          <p className="text-gray-800 text-lg max-w-2xl mx-auto text-left sm:text-right">
+          <p className="text-gray-800 text-lg max-w-2xl mx-auto text-left sm:text-right dark:text-gray-300">
             Real results from wellness professionals, corporate leaders, and individuals who built systems they could actually live with.
           </p>
         </div>

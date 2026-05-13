@@ -83,7 +83,7 @@ export default function ProcessSection() {
           >
             {/* Replace src with the actual coaching/wellness image */}
             <Image
-              src="https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0"
+              src="/con.webp"
               alt="Ajay Sethi Coaching Process"
               fill
               className="object-cover"

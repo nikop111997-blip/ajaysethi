@@ -138,9 +138,9 @@ export default function StrugglesBento() {
             </div>
 
             {/* Wide Card Image */}
-            <div className="relative w-full md:w-[45%] min-h-[400px] md:min-h-full">
+            <div className="relative w-full md:w-[55%] min-h-[400px] md:min-h-full">
               <Image
-                src="https://images.unsplash.com/photo-1738523686527-d68bd5eaeaae"
+                src="/micpe.webp"
                 alt="Scalable Coaching Business"
                 fill
                 className="object-cover"

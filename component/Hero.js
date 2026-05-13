@@ -11,10 +11,10 @@ export default function Hero() {
       {/* Background Image with Cinematic Overlay */}
       <div className="absolute inset-0 z-0">
       <Image
-  src="https://images.unsplash.com/photo-1660917115578-ba943a0c3247"
+  src="/hero.png"
   alt="Ajay Sethi Wellness"
   fill
-  className="object-cover object-center grayscale brightness-75"
+  className="object-cover object-top grayscale brightness-75 rotate-y-180 "
   priority
 />
         {/* Gradient overlay to ensure text readability like the reference image */}

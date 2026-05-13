@@ -35,10 +35,10 @@ export default function FollowCtaSection() {
           <div className="relative w-full md:w-5/12 h-[350px] md:h-[450px] lg:h-[500px] flex-shrink-0 pt-10 px-8 md:px-0">
             {/* The image should ideally be a transparent PNG cutout of Ajay */}
             <Image
-              src="/sa.webp" 
+              src="/png.png" 
               alt="Ajay Sethi"
               fill
-              className="object-contain object-bottom drop-shadow-xl z-10"
+              className="object-contain object-bottom drop-shadow-xl z-10 rotate-y-180"
               sizes="(max-width: 768px) 100vw, 40vw"
               priority
             />

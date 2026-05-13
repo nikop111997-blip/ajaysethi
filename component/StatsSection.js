@@ -101,13 +101,13 @@ export default function StatsSection() {
               // Added Hover Classes Here: padding, rounded corners, transitions, transform, and shadow
               className="flex flex-col items-start text-left group p-8 rounded-3xl hover:bg-gray-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] hover:bg-gray-50/50 cursor-default"
             >
-              <h2 className="text-5xl md:text-6xl font-semibold mb-4 tracking-tight transition-transform duration-500 group-hover:scale-105 origin-left">
+              <h2 className="text-5xl md:text-6xl font-semibold mb-4 tracking-tight dark:text-gray-950 transition-transform duration-500 group-hover:scale-105 origin-left">
                 <AnimatedCounter value={stat.value} />
               </h2>
               <h3 className="text-lg font-bold text-gray-900 mb-2 transition-colors duration-300">
                 {stat.title}
               </h3>
-              <p className="text-sm text-gray-800 leading-relaxed max-w-[240px]">
+              <p className="text-md text-gray-800 leading-relaxed max-w-[240px]">
                 {stat.description}
               </p>
             </motion.div>

@@ -59,7 +59,7 @@ export default function CorporateChallenges() {
           >
             {/* Background Image */}
             <Image
-              src="https://images.unsplash.com/photo-1579389083395-4507e98b5e67" // Replace with an actual image of a corporate team
+              src="/engage.webp" // Replace with an actual image of a corporate team
               alt="Corporate Team Stress"
               fill
               className="object-cover  transition-transform duration-700 group-hover:scale-105"

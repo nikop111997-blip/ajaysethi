@@ -34,7 +34,7 @@ export default function HeroText() {
 
       {/* Animated Rollover Container */}
       {/* The fixed height (h-[1.2em]) ensures the container doesn't collapse during the transition */}
-      <div className="relative h-[1.2em] w-full overflow-hidden">
+      <div className="relative h-[1.1em] w-full overflow-hidden">
         <AnimatePresence mode="popLayout">
           <motion.span
             key={index}

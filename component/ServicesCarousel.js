@@ -64,11 +64,11 @@ export default function ServicesCarousel() {
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] leading-tight tracking-tight mb-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] leading-tight tracking-tight mb-4 dark:text-gray-50">
               Here’s How I Help You <br />
               <span className="text-[#ff6a3d]">Transform</span>
             </h2>
-            <p className="text-gray-800 text-lg leading-relaxed">
+            <p className="text-gray-800 text-lg leading-relaxed dark:text-gray-300">
               Proven systems, personalized strategy, and community accountability to turn your health and business goals into lasting results.
             </p>
           </div>
@@ -132,14 +132,14 @@ export default function ServicesCarousel() {
         <div className="flex items-center justify-center gap-4 mt-6">
           <button 
             onClick={() => scroll("left")}
-            className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer text-gray-600 hover:bg-zinc-950 hover:text-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-200"
+            className="w-12 h-12 rounded-full border border-gray-200 flex dark:text-gray-50 items-center justify-center cursor-pointer text-gray-600 hover:bg-zinc-950 hover:text-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-label="Scroll left"
           >
             <ArrowLeft className="w-5 h-5" />
           </button>
           <button 
             onClick={() => scroll("right")}
-            className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer text-gray-600 hover:bg-zinc-950 hover:text-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-200"
+            className="w-12 h-12 rounded-full border border-gray-200 flex dark:text-gray-50 items-center justify-center cursor-pointer text-gray-600 hover:bg-zinc-950 hover:text-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-label="Scroll right"
           >
             <ArrowRight className="w-5 h-5" />

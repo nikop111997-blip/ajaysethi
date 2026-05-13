@@ -1,5 +1,6 @@
 import AboutSection from "@/component/AboutSection";
 import BlogSection from "@/component/BlogSection";
+import HealthAssessment from "@/component/ClarityAssessment";
 import ContactSection from "@/component/ContactSection";
 import CorporateChallenges from "@/component/CorporateChallenges";
 import FaqSection from "@/component/FaqSection";
@@ -11,6 +12,7 @@ import StatsSection from "@/component/StatsSection";
 import StrugglesSection from "@/component/StrugglesSection";
 import TestimonialCarousel from "@/component/TestimonialCarousel";
 import VideoJourneySection from "@/component/VideoJourneySection";
+import WhoIsThisFor from "@/component/WhoIsThisFor";
 import Image from "next/image";
 
 export default function Home() {
@@ -19,11 +21,13 @@ export default function Home() {
       <Hero />
       <StatsSection />
       <AboutSection />
+      <WhoIsThisFor />
       <StrugglesSection />
       <ServicesCarousel />
       <CorporateChallenges />
       <ProcessSection />
       <VideoJourneySection />
+      <HealthAssessment />
       <BlogSection />
       <TestimonialCarousel />
       <FaqSection />

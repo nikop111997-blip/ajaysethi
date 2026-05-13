@@ -7,7 +7,7 @@ export default function VideoJourneySection() {
     <section 
       // The `bg-fixed` class creates the parallax "stuck background" effect when scrolling
       className="relative w-full py-24 md:py-32 px-6 md:px-12 bg-fixed bg-center bg-cover font-sans overflow-hidden"
-      style={{ backgroundImage: "url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7')" }} // Replace with actual high-res background image
+      style={{ backgroundImage: "url('/sabha.webp')" }} // Replace with actual high-res background image
     >
       {/* PURE CSS SERVER-SIDE ANIMATIONS */}
       <style suppressHydrationWarning>{`
