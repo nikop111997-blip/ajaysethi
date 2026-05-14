@@ -99,10 +99,10 @@ export default function AboutFounderSection() {
   <div className="relative w-[100%] h-full overflow-hidden rounded-xl">
     
     <Image
-      src="/mer.jpg"
+      src="/dire.jpg"
       alt="Ajay Sethi - Wellness Coach"
       fill
-      className="object-cover object-right scale-150 grayscale"
+      className="object-cover object-right scale-100 grayscale"
     />
     
   </div>

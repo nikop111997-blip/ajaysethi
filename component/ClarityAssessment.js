@@ -153,7 +153,8 @@ export default function HealthAssessment() {
       >
         
         {/* Left Side: Visuals & Context */}
-        <div className="relative p-12 flex flex-col justify-center bg-black overflow-hidden min-h-[500px]">
+        <div className='hidden sm:block min-h-[500px]'>
+        <div className="relative p-12 flex flex-col justify-center rounded-br-2xl bg-black overflow-hidden min-h-[500px]">
           <div className="absolute inset-0 z-0">
             {/* Using a placeholder gradient, but you should place your 3D phone asset here */}
           </div>
@@ -183,6 +184,7 @@ export default function HealthAssessment() {
               </li>
             </ul>
           </motion.div>
+        </div>
         </div>
 
         {/* Right Side: Interactive Flow */}

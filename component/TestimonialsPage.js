@@ -149,7 +149,7 @@ export default function TestimonialsPage() {
 
   <div className="relative bg-neutral-200 rounded-xl overflow-hidden group">
     <Image
-      src="/pra.jpg"
+      src="/dswa.jpg"
       alt="Corporate workshop"
       fill
       className="object-cover group-hover:scale-105 transition-transform duration-700"

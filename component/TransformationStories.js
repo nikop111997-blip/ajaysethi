@@ -25,7 +25,7 @@ const TransformationStories = () => {
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full bg-neutral-200 overflow-hidden relative">
                   {/* Replace with actual image */}
-                  <div className="w-full h-full bg-neutral-300" />
+                  <Image src={'https://images.unsplash.com/photo-1629252321485-c9363dd2f581'} alt='rahul' height={100} width={100} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-neutral-900">Rahul Sharma.,</h4>
@@ -43,7 +43,7 @@ const TransformationStories = () => {
             <div className="bg-white rounded-lg p-8 shadow-sm border border-neutral-100 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full bg-neutral-200 overflow-hidden relative">
-                  <div className="w-full h-full bg-neutral-300" />
+                  <Image src={'https://images.unsplash.com/photo-1570128641432-a1520efe3b1d'} alt='anil gupta' height={100} width={100} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-neutral-900">Dr. Anil Gupta.,</h4>
@@ -66,7 +66,18 @@ const TransformationStories = () => {
             
             <div className="relative w-full h-64 mb-6 flex justify-center items-end bg-gradient-to-b from-neutral-50 to-white rounded-2xl">
                {/* Replace src with Ajay Sethi's cutout image */}
-               <div className="w-48 h-48 bg-neutral-200 rounded-t-full border-4 border-white shadow-sm" />
+             <div className="relative inline-block">
+  <Image
+    src={"/png.png"}
+    alt="Ajay Sethi"
+    height={500}
+    width={240}
+    className="object-cover"
+  />
+
+  {/* Bottom fade */}
+  <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+</div>
             </div>
 
             <div className="flex-grow">
@@ -95,7 +106,7 @@ const TransformationStories = () => {
             <div className="bg-white rounded-lg p-8 shadow-sm border border-neutral-100 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full bg-neutral-200 overflow-hidden relative">
-                  <div className="w-full h-full bg-neutral-300" />
+                  <Image src={'https://images.unsplash.com/photo-1649570443214-d4028de34e9f'} alt='meena' height={100} width={100} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-neutral-900">Meena Kapoor.,</h4>
@@ -113,7 +124,7 @@ const TransformationStories = () => {
             <div className="bg-white rounded-lg p-8 shadow-sm border border-neutral-100 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full bg-neutral-200 overflow-hidden relative">
-                  <div className="w-full h-full bg-neutral-300" />
+                  <Image src={'https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3'} alt='priya yoga' height={100} width={100} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-neutral-900">Priya.,</h4>

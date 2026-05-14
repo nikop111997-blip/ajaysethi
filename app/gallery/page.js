@@ -9,17 +9,17 @@ import FollowCtaSection from '@/component/FollowCtaSection';
 const sliderData = [
   { 
     id: 1, 
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop', 
+    image: '/backns.webp', 
     title: 'Transforming Lives Daily' 
   },
   { 
     id: 2, 
-    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop', 
+    image: '/tali2.jpg', 
     title: 'Corporate Wellness Leadership' 
   },
   { 
     id: 3, 
-    image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=2070&auto=format&fit=crop', 
+    image: '/smgha.webp', 
     title: 'Global Speaking Events' 
   },
 ];
@@ -27,12 +27,12 @@ const sliderData = [
 const categories = ['All', 'Mentorship', 'Corporate', 'Events'];
 
 const galleryData = [
-  { id: 1, category: 'Mentorship', image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop' },
-  { id: 2, category: 'Events', image: 'https://images.unsplash.com/photo-1540575861501-7ad060e39fe5?q=80&w=2070&auto=format&fit=crop' },
-  { id: 3, category: 'Corporate', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop' },
-  { id: 4, category: 'Mentorship', image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop' },
-  { id: 5, category: 'Events', image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069&auto=format&fit=crop' },
-  { id: 6, category: 'Corporate', image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop' },
+  { id: 1, category: 'Mentorship', image: '/conn.webp' },
+  { id: 2, category: 'Events', image: '/ajay_sir_speaking.webp' },
+  { id: 3, category: 'Corporate', image: '/dswa.jpg' },
+  { id: 4, category: 'Mentorship', image: '/engage.webp' },
+  { id: 5, category: 'Events', image: '/jums.jpg' },
+  { id: 6, category: 'Corporate', image: '/sabha.webp' },
 ];
 
 const GallerySection = () => {
@@ -172,11 +172,8 @@ const GallerySection = () => {
             <motion.div 
               className="p-4 md:p-5 rounded-xl bg-white/10 backdrop-blur-xl border border-white/20 translate-y-6 group-hover:translate-y-0 transition-transform duration-500"
             >
-              <p className="text-[#ff6a3d] text-[10px] md:text-xs font-bold uppercase tracking-widest mb-1">
+              <p className="text-[#ff6a3d] text-[10px] md:text-xs text-center font-bold uppercase tracking-widest mb-1">
                 {item.category}
-              </p>
-              <p className="text-white text-base md:text-lg font-semibold">
-                View Project Details
               </p>
             </motion.div>
           </div>

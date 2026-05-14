@@ -47,7 +47,8 @@ export default function Footer() {
               <Link href="/corporate-wellness" className="text-white/80 hover:text-[#ff6a3d] font-medium text-sm transition-colors">Corporate</Link>
               <Link href="/business-coaching" className="text-white/80 hover:text-[#ff6a3d] font-medium text-sm transition-colors">Coaching</Link>
               <Link href="/success-stories" className="text-white/80 hover:text-[#ff6a3d] font-medium text-sm transition-colors">Results</Link>
-              <Link href="/contact" className="text-white/80 hover:text-[#ff6a3d] font-medium text-sm transition-colors">Contact</Link>
+              <Link href="/gallery" className="text-white/80 hover:text-[#ff6a3d] font-medium text-sm transition-colors">Gallery</Link>
+              <Link href="/contact-us" className="text-white/80 hover:text-[#ff6a3d] font-medium text-sm transition-colors">Contact</Link>
             </nav>
 
             {/* Social Icons - Circular dark buttons matching reference */}

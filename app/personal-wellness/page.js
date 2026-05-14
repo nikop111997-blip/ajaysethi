@@ -79,9 +79,9 @@ export default function PersonalWellnessLandingPage() {
             
             <div className="mt-10 flex items-center gap-4">
               <div className="flex -space-x-3">
-                {[1,2,3,4].map(i => (
+                {['https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3','https://images.unsplash.com/photo-1570128641432-a1520efe3b1d','https://images.unsplash.com/photo-1649570443214-d4028de34e9f','https://images.unsplash.com/photo-1629252321485-c9363dd2f581'].map(i => (
                   <div key={i} className="w-10 h-10 rounded-full bg-neutral-200 border-2 border-[#f8f9fa] overflow-hidden">
-                    <img src={`/avatars/user-${i}.jpg`} alt="Member" className="w-full h-full object-cover" />
+                    <Image src={i} height={100} width={100} alt="Member" className="w-full h-full object-cover" />
                   </div>
                 ))}
               </div>
@@ -138,7 +138,7 @@ export default function PersonalWellnessLandingPage() {
       <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="relative rounded-[1rem] overflow-hidden shadow-2xl border border-neutral-200 bg-neutral-200 aspect-[4/5]">
-            <Image src="/smgha.jpg" fill alt="Consistent Transformation" className="w-full h-full object-cover" />
+            <Image src="/pera.jpg" fill alt="Consistent Transformation" className="w-full h-full object-cover" />
           </motion.div>
           
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>

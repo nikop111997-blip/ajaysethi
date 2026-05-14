@@ -13,7 +13,7 @@ export default function AboutSection() {
         {/* Left Column: Main Image */}
         <div className="relative w-full aspect-[4/5] md:aspect-square lg:aspect-[4/5] rounded-[2rem] overflow-hidden bg-gray-100 shadow-sm">
   <Image
-    src="/self2.webp"
+    src="/abouts.jpg"
     alt="Ajay Sethi - Wellness Consultant"
     fill
     priority
@@ -64,12 +64,12 @@ export default function AboutSection() {
             {/* Stats */}
             <div className="flex gap-12">
               <div className="flex flex-col">
-                <span className="text-4xl font-bold text-[#1a1a1a] dark:text-gray-50 mb-1">30+</span>
-                <span className="text-sm text-gray-800 dark:text-gray-200 font-medium">Years of Experience</span>
+                <span className="text-4xl font-bold text-[#1a1a1a] dark:text-gray-50 mb-1">18+</span>
+                <span className="text-sm text-gray-800 dark:text-gray-200 font-medium">Countries</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-4xl font-bold text-[#1a1a1a] dark:text-gray-50 mb-1">50k+</span>
-                <span className="text-sm text-gray-800 dark:text-gray-200 font-medium">Lives Impacted</span>
+                <span className="text-4xl font-bold text-[#1a1a1a] dark:text-gray-50 mb-1">400+</span>
+                <span className="text-sm text-gray-800 dark:text-gray-200 font-medium">Citie Covered</span>
               </div>
             </div>
 

@@ -13,7 +13,7 @@ const navLinks = [
   { name: "Corporate", href: "/corporate-wellness" },
   { name: "Coaching", href: "/business-coaching" },
   { name: "Success Stories", href: "/success-stories" },
-  { name: "Resources", href: "/resources" },
+  { name: "Gallery", href: "/gallery" },
 ];
 
 const darkRoutes = ["/", "/about", "/success-stories", "/gallery", "/corporate-wellness", "/business-coaching"];
