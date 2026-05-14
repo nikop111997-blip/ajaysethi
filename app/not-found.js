@@ -20,16 +20,11 @@ export default function NotFound() {
       <div className="max-w-2xl mx-auto flex flex-col items-center text-center">
         
         {/* Subtle Icon Accent */}
-        <div 
-          className="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center mb-8 animate-404"
-          style={{ animationDelay: "0.1s" }}
-        >
-          <Compass className="w-10 h-10 text-[#ff6a3d]" />
-        </div>
+    
 
         {/* The 404 Headline */}
         <h1 
-          className="text-8xl md:text-9xl font-black text-[#1a1a1a] tracking-tighter leading-none mb-6 animate-404"
+          className="text-8xl md:text-9xl text-[#1a1a1a] tracking-tighter leading-none mb-6 animate-404 "
           style={{ animationDelay: "0.2s" }}
         >
           4<span className="text-[#ff6a3d]">0</span>4
@@ -45,7 +40,7 @@ export default function NotFound() {
 
         {/* Brand-aligned Body Text */}
         <p 
-          className="text-gray-600 text-lg leading-relaxed max-w-lg mb-12 animate-404"
+          className="text-gray-800 text-lg leading-relaxed max-w-xl mb-12 animate-404"
           style={{ animationDelay: "0.4s" }}
         >
           The page you are looking for doesn't exist or has been moved. Let's get you back on track to building lasting health and scalable systems.
@@ -55,12 +50,15 @@ export default function NotFound() {
         <div className="animate-404" style={{ animationDelay: "0.5s" }}>
           <Link
             href="/"
-            className="inline-flex items-center gap-4 bg-[#ff6a3d] text-[#1a1a1a] py-2 pl-6 pr-2 rounded-xl text-base font-bold hover:bg-[#ff7a53] transition-colors shadow-lg shadow-[#ff6a3d]/20 group"
+            className="inline-flex items-center gap-4 bg-[#ff6a3d] text-[#ffffff] py-2 pl-6 pr-2 rounded-xl text-base hover:bg-[#ff7a53] transition-colors shadow-lg shadow-[#ff6a3d]/20 group"
           >
             Return to Homepage
-            <div className="bg-[#1a1a1a] rounded-lg p-2.5 transition-transform group-hover:translate-x-1">
-              <ArrowRight className="w-5 h-5 text-white" />
-            </div>
+            <div className="bg-[#1a1a1a] rounded-xl relative overflow-hidden flex items-center justify-center w-10 h-10">
+  <ArrowRight className="w-5 h-5 text-white absolute transition-transform duration-300 ease-in-out group-hover:translate-x-[150%]" />
+  
+  
+  <ArrowRight className="w-5 h-5 text-white absolute -translate-x-[150%] transition-transform duration-300 ease-in-out group-hover:translate-x-0" />
+</div>
           </Link>
         </div>
 

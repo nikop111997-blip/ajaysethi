@@ -125,8 +125,8 @@ export default function WhoIsThisFor() {
               <ul className="flex flex-col gap-3 mb-10 flex-grow">
                 {item.bullets.map((bullet, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5 group-hover:text-[#1a1a1a] transition-colors" />
-                    <span className="text-gray-600 text-sm font-medium">{bullet}</span>
+                    <CheckCircle2 className="w-5 h-5 text-gray-800 flex-shrink-0 mt-0.5 group-hover:text-[#1a1a1a] transition-colors" />
+                    <span className="text-gray-800 text-sm font-medium">{bullet}</span>
                   </li>
                 ))}
               </ul>

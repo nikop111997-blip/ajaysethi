@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Globe, Mail } from "lucide-react"; // Only keeping standard icons from lucide
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -14,26 +15,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">
           
           {/* Logo Area */}
-          <Link href="/" className="flex items-center gap-2 group">
-            {/* Abstract Icon matching the primary navbar design */}
-            <svg
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-white transition-transform group-hover:scale-105"
-            >
-              <path
-                d="M12 2C10.8954 2 10 2.89543 10 4C10 5.10457 10.8954 6 12 6C13.1046 6 14 5.10457 14 4C14 2.89543 13.1046 2 12 2Z"
-                fill="currentColor"
-              />
-              <path
-                d="M12 8C8.68629 8 6 10.6863 6 14V22H10V16H14V22H18V14C18 10.6863 15.3137 8 12 8Z"
-                fill="currentColor"
-              />
-            </svg>
-            <span className="text-2xl font-bold tracking-tight text-white">Ajay Sethi</span>
+          <Link href="/" className="flex items-center gap-2 group -mb-3">
+            <Image src={'/2.png'} height={100} width={200} className="white logo" />
           </Link>
 
           {/* Right Side: Navigation & Social Icons Container */}
