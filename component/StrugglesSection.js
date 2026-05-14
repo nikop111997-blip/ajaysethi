@@ -47,7 +47,7 @@ export default function StrugglesBento() {
 
           <div className="animate-bento" style={{ animationDelay: "0.4s" }}>
             <Link
-              href="/business-audit"
+              href="/contact-us"
               className="inline-flex items-center gap-4 bg-[#ff6a3d] text-[#1a1a1a] py-2 pl-6 pr-4 rounded-xl text-base font-semibold hover:bg-[#ff7a53] transition-colors group"
             >
               Book Free Business Audit

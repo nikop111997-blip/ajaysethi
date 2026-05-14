@@ -53,9 +53,8 @@ export default function FollowCtaSection() {
               Follow for proven systems on sustainable health, business growth, and leadership.
             </h2>
             <div className="flex flex-col items-center sm:flex-row gap-2">
-  <Link
-              href="/business-audit"
-              className="inline-flex items-center gap-4 bg-[#ff6a3d] text-[#1a1a1a] py-2 pl-6 pr-4 rounded-xl text-base font-semibold hover:bg-[#ff7a53] transition-colors group"
+  <button
+              className="open-booking-modal inline-flex items-center gap-4 bg-[#ff6a3d] text-[#1a1a1a] py-2 pl-6 pr-4 rounded-xl text-base font-semibold hover:bg-[#ff7a53] transition-colors group"
             >
              Connect Now
               <div className="bg-[#1a1a1a] rounded-xl relative overflow-hidden flex items-center justify-center w-10 h-10">
@@ -64,7 +63,7 @@ export default function FollowCtaSection() {
   
   <ArrowRight className="w-5 h-5 text-white absolute -translate-x-[150%] transition-transform duration-300 ease-in-out group-hover:translate-x-0" />
 </div>
-            </Link>
+            </button>
             <Link
               href="https://linkedin.com/in/ajaysethi" // Replace with actual social link
               target="_blank"

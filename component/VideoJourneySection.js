@@ -44,10 +44,10 @@ export default function VideoJourneySection() {
           
           {/* CTA Button */}
           <Link
-            href="/clarity-call"
+            href="/contact-us"
             className="inline-flex items-center gap-4 bg-[#1a1a1a] text-white py-2 pl-6 pr-4 rounded-full text-base font-bold hover:bg-black transition-colors group border border-white/10"
           >
-            Start With Clarity
+            Connect With Me
             <div className="bg-[#ff6a3d] rounded-full relative overflow-hidden flex items-center justify-center w-10 h-10">
   <ArrowRight className="w-5 h-5 text-white absolute transition-transform duration-300 ease-in-out group-hover:translate-x-[150%]" />
   

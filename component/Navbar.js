@@ -13,10 +13,10 @@ const navLinks = [
   { name: "Corporate", href: "/corporate-wellness" },
   { name: "Coaching", href: "/business-coaching" },
   { name: "Success Stories", href: "/success-stories" },
-  { name: "Gallery", href: "/gallery" },
+  { name: "Events", href: "/events" },
 ];
 
-const darkRoutes = ["/", "/about", "/success-stories", "/gallery", "/corporate-wellness", "/business-coaching"];
+const darkRoutes = ["/", "/about", "/success-stories", "/events", "/corporate-wellness", "/business-coaching"];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -101,9 +101,8 @@ export default function Navbar() {
 
           {/* Enhanced CTA */}
           <div className="hidden lg:block relative z-50">
-            <Link
-              href="/contact-us"
-              className={`relative group overflow-hidden px-7 py-3 rounded-full text-sm font-semibold transition-all duration-300 inline-block border ${
+            <button
+              className={`relative group open-booking-modal overflow-hidden px-7 py-3 rounded-full text-sm font-semibold transition-all duration-300 inline-block border ${
                 isDarkText ? "bg-black text-white border-black" : "bg-white text-black border-white"
               }`}
             >
@@ -115,7 +114,7 @@ export default function Navbar() {
                   <ArrowRight className="w-5 h-5 absolute -translate-x-[150%] translate-y-[150%] transition-transform duration-500 ease-in-out group-hover:translate-x-0 group-hover:translate-y-0" />
                 </div>
               </div>
-            </Link>
+            </button>
           </div>
 
           {/* Mobile Toggle */}

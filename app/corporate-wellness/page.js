@@ -301,7 +301,7 @@ export default function CorporateWellnessLandingPage() {
           <div className="relative z-10 flex flex-col items-center md:items-start bg-white p-8 rounded-xl shadow-xl border border-white/50 w-full md:w-auto min-w-[340px]">
             <div className="text-sm font-medium text-[#ff6a3d] uppercase tracking-wider mb-2">Investment Scope</div>
             <div className="text-3xl lg:text-4xl font-medium text-neutral-900 mb-2">₹50K - ₹10L+</div>
-            <div className="text-sm font-medium text-neutral-600 mb-6">Customized based on employee count, format, and involvement.</div>
+            <div className="text-sm font-medium text-neutral-800 mb-6">Customized based on employee count, format, and involvement.</div>
             
             <div className="space-y-2 w-full mb-6 text-sm text-neutral-800 font-medium">
               <div className="flex justify-between border-b pb-2"><span>One-time Sessions</span> <span>90–120 mins</span></div>
@@ -309,7 +309,7 @@ export default function CorporateWellnessLandingPage() {
               <div className="flex justify-between pb-1"><span>Long-term Engagement</span> <span>3–12 months</span></div>
             </div>
 
-            <button className="w-full py-4 bg-[#0f172a] text-white font-medium rounded-lg hover:bg-neutral-800 transition-all shadow-lg flex items-center justify-center gap-2">
+            <button className="open-booking-modal w-full py-4 bg-[#0f172a] text-white font-medium rounded-lg hover:bg-neutral-800 transition-all shadow-lg flex items-center justify-center gap-2">
               Let's Talk <ArrowRight className="w-5 h-5" />
             </button>
           </div>

@@ -308,7 +308,7 @@ export default function WellnessBusinessCoachingPage() {
               <div className="flex justify-between pb-1"><span>Advanced Mentorship</span> <span className="text-right">₹4,00,000+</span></div>
             </div>
 
-            <button className="w-full py-4 bg-[#0f172a] text-white font-medium rounded-lg hover:bg-neutral-800 transition-all shadow-lg flex items-center justify-center gap-2">
+            <button className="open-booking-modal w-full py-4 bg-[#0f172a] text-white font-medium rounded-lg hover:bg-neutral-800 transition-all shadow-lg flex items-center justify-center gap-2">
               Apply Now <ArrowRight className="w-5 h-5" />
             </button>
           </div>

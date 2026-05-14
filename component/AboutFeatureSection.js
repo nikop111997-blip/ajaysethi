@@ -113,7 +113,7 @@ export default function AboutFeatureSection() {
             
             {/* CTA Button matching your aesthetic */}
            <Link
-              href="/business-audit"
+              href="/contact-us"
               className="inline-flex items-center -ml-8 sm:-ml-0 gap-4 bg-[#ff6a3d] text-[#ffffff] py-2 pl-6 pr-4 rounded-2xl text-base font-semibold hover:bg-[#ff7a53] transition-colors group"
             >
               Connect Now

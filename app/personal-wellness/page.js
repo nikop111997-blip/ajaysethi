@@ -238,7 +238,7 @@ export default function PersonalWellnessLandingPage() {
           <div className="relative z-10 flex flex-col items-center md:items-start bg-white p-8 rounded-xl shadow-xl border border-white/50 w-full md:w-auto min-w-[320px]">
             <div className="text-5xl font-medium text-neutral-900 mb-2">₹8,484</div>
             <div className="text-sm font-medium text-neutral-800 uppercase tracking-wider mb-8">Per Month</div>
-            <button className="w-full py-4 bg-[#0f172a] text-white font-medium rounded-lg hover:bg-neutral-800 transition-all shadow-lg flex items-center justify-center gap-2">
+            <button className="open-booking-modal w-full py-4 bg-[#0f172a] text-white font-medium rounded-lg hover:bg-neutral-800 transition-all shadow-lg flex items-center justify-center gap-2">
               Apply Now <ArrowRight className="w-5 h-5" />
             </button>
             <p className="text-xs text-neutral-800 mt-4 text-center w-full font-medium">Replaces multiple gym memberships and trial-and-error diets.</p>

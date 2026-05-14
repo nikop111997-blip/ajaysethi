@@ -66,7 +66,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="flex flex-col items-start md:items-end gap-3"
+          className="flex flex-col items-start md:items-end gap-3 open-booking-modal"
         >
           {/* Orange CTA Card mimicking the reference */}
           <div className="group bg-[#ff6a3d] hover:bg-[#ff5a2b] transition-colors cursor-pointer rounded-2xl px-5 py-2 sm:p-5 flex items-center justify-between gap-8 w-full sm:w-[280px] shadow-2xl">

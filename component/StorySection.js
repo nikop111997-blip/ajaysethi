@@ -149,7 +149,7 @@ export default function CreativeStorySection() {
             <p className="text-neutral-300 mb-8 leading-relaxed">
               If you are looking for quick fixes, I may not be the right coach for you. But if you are ready to build real health, create meaningful transformation, or grow a purpose-driven wellness business... <strong className="text-white">Then you are in the right place.</strong>
             </p>
-            <button className="w-full py-4 bg-[#ff6a3d] text-black font-semibold rounded-lg hover:bg-[#ff7a53] hover:-translate-y-1 transition-all shadow-lg ">
+            <button className="open-booking-modal w-full py-4 bg-[#ff6a3d] text-black font-semibold rounded-lg hover:bg-[#ff7a53] hover:-translate-y-1 transition-all shadow-lg ">
               Start Your Transformation
             </button>
           </div>

@@ -62,9 +62,8 @@ export default function ProcessSection() {
               Most people fail because they rely on extreme workouts or willpower. Here is how we build a system you can actually live with — one step at a time.
             </p>
 
-            <Link
-              href="/clarity-call"
-              className="inline-flex items-center gap-4 bg-[#ff6a3d] text-[#ffffff] py-2 pl-6 pr-4 rounded-xl text-base font-bold hover:bg-[#ff7a53] transition-colors group mb-12 w-max"
+            <button
+              className="open-booking-modal inline-flex items-center gap-4 bg-[#ff6a3d] text-[#ffffff] py-2 pl-6 pr-4 rounded-xl text-base font-bold hover:bg-[#ff7a53] transition-colors group mb-12 w-max"
             >
               Start With Clarity
               <div className="bg-[#1a1a1a] rounded-xl relative overflow-hidden flex items-center justify-center w-10 h-10">
@@ -73,7 +72,7 @@ export default function ProcessSection() {
   
   <ArrowRight className="w-5 h-5 text-white absolute -translate-x-[150%] transition-transform duration-300 ease-in-out group-hover:translate-x-0" />
 </div>
-            </Link>
+            </button>
           </div>
 
           {/* Left Column Image */}

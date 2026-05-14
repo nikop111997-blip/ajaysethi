@@ -31,7 +31,8 @@ export default function ServicesCarousel() {
       id: 1,
       title: "Personal Wellness",
       description: "A simple, structured system to help you build lasting health, fitness, and happiness—without extreme diets, long workouts, or disrupting your lifestyle.",
-      image: "https://images.unsplash.com/photo-1758274526979-fa8dbb31cb21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbmFsJTIwd2VsbG5lc3N8ZW58MHwwfDB8fHww"
+      image: "https://images.unsplash.com/photo-1758274526979-fa8dbb31cb21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbmFsJTIwd2VsbG5lc3N8ZW58MHwwfDB8fHww",
+      link: "/personal-wellness"
     },
     {
       id: 2,
@@ -45,7 +46,7 @@ export default function ServicesCarousel() {
       title: "Business Coaching",
       description: "A structured pathway to help you turn your passion for wellness into a profitable, scalable coaching business—without heavy investments or confusion.",
       image: "https://images.unsplash.com/photo-1616587656977-ac36a5a430bc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
-      link: ""
+      link: "/business-coaching"
     },
     // Added 4th Item from the brief to enable scrolling on desktop
     {
@@ -53,7 +54,7 @@ export default function ServicesCarousel() {
       title: "Speaking & Workshops",
       description: "Engaging, actionable sessions designed for leadership teams and organizations to build sustainable health, high energy, and performance.",
       image: "https://images.unsplash.com/photo-1715610258704-e8f9f5710fe0?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
-      link: "/speaking"
+      link: "/events"
     }
   ];
 
@@ -75,18 +76,13 @@ export default function ServicesCarousel() {
           
           {/* Top CTA Buttons */}
           <div className="flex items-center gap-4 flex-shrink-0">
-            <Link
-              href="/services"
-              className="bg-[#1a1a1a] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-black transition-colors"
-            >
-              View All Services
-            </Link>
-            <Link
-              href="/contact"
-              className="border border-gray-300 text-[#1a1a1a] bg-white px-6 py-3 rounded-full text-sm font-semibold hover:border-gray-400 hover:bg-gray-50 transition-colors"
+           
+            <button
+              className="open-booking-modal border flex gap-2 items-center cursor-pointer border-gray-300 text-[#1a1a1a] bg-white px-6 py-3 rounded-lg text-sm font-semibold hover:border-gray-400 hover:bg-gray-50 transition-colors"
             >
               Free Call
-            </Link>
+              <ArrowRight className="h-4 w-4" />
+            </button>
           </div>
         </div>
 
@@ -99,14 +95,20 @@ export default function ServicesCarousel() {
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {services.map((service) => (
-              <div 
+              <Link
+              href={service.link}
                 key={service.id}
                 // width settings calculate exactly how many cards show per breakpoint
-                className="bg-white border border-gray-100 shadow-sm rounded-[1rem] p-8 flex flex-col snap-start shrink-0 w-[85vw] md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+                className=" bg-white border border-gray-100 shadow-sm rounded-[1rem] p-8 flex flex-col snap-start shrink-0 w-[85vw] md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
               >
+                <div className="flex justify-between">
                 <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4 tracking-tight pr-4">
                   {service.title}
                 </h3>
+                <div className="h-8 w-8 bg-[#ff6a3d] -rotate-45 rounded-full flex justify-center items-center transform transition-all">
+                  <ArrowRight className="h-4 w-4 text-white" />
+                </div>
+                </div>
                 
                 <p className="text-gray-800 text-sm leading-relaxed mb-8 flex-grow">
                   <span className="font-semibold text-gray-900">Description: </span>
@@ -123,7 +125,7 @@ export default function ServicesCarousel() {
                     sizes="(max-width: 768px) 85vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
