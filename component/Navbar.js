@@ -70,10 +70,10 @@ export default function Navbar() {
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out ${
           isScrolled && !isMobileMenuOpen
             ? "bg-white/80 backdrop-blur-md shadow-sm py-3"
-            : "bg-transparent py-6"
+            : "bg-transparent py-3"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-2 md:px-12 flex justify-between items-center">
           
           {/* Logo with slight hover lift */}
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
@@ -83,7 +83,7 @@ export default function Navbar() {
 >
   <Image
     key={isScrolled ? "logo-dark" : "logo-light"}
-    src={isScrolled ? "/logo.png" : "/2.png"}
+    src={isScrolled || !isDarkRoute || isMobileMenuOpen? "/logo.png" : "/2.png"}
     alt="logo ajay sethi"
     height={80}
     width={200}

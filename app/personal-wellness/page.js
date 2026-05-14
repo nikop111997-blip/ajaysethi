@@ -45,7 +45,7 @@ export default function PersonalWellnessLandingPage() {
   ];
 
   return (
-    <div className=" text-neutral-900 font-sans selection:bg-orange-200 overflow-hidden">
+    <div className=" text-neutral-900 font-sans selection:bg-orange-200 overflow-hidden dark:bg-white">
       
       {/* =========================================
           1. HERO SECTION
@@ -55,14 +55,14 @@ export default function PersonalWellnessLandingPage() {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div initial="hidden" animate="visible" variants={fadeUp} className="max-w-xl">
-            <h1 className="text-5xl md:text-6xl font-medium tracking-tight leading-[1.1] mb-6 text-neutral-900">
+            <h1 className="text-4xl md:text-6xl font-medium tracking-tight leading-[1.1] mb-6 text-neutral-900">
               Build Lasting Health. <br />
               <span className="text-[#ff6a3d]">Results That Last.</span>
             </h1>
-            <p className="text-lg text-neutral-800 mb-8 leading-relaxed font-medium">
+            <p className="text-md sm:text-lg text-neutral-800 mb-8 leading-relaxed font-medium">
               A simple, structured system to help you build lasting health, fitness, and happiness—without extreme diets, long workouts, or disrupting your lifestyle.
             </p>
-            <div className="flex flex-col sm:flex-row items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <Link
               href="/contact-us"
               className="inline-flex items-center gap-4 bg-[#ff6a3d] text-[#ffffff] py-2 pl-6 pr-4 rounded-xl text-base font-semibold hover:bg-[#ff7a53] transition-colors group"

@@ -135,7 +135,7 @@ const GallerySection = () => {
   const displayedTopics = showAllTopics ? keynoteTopics : keynoteTopics.slice(0, 8);
 
   return (
-    <section className="w-full relative overflow-hidden">
+    <section className="w-full relative overflow-hidden dark:bg-white">
       
       {/* --- FULL SCREEN HERO SLIDER (Existing) --- */}
       <div className="relative w-full h-screen overflow-hidden bg-black">

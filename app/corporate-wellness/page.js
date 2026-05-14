@@ -47,7 +47,7 @@ export default function CorporateWellnessLandingPage() {
   ];
 
   return (
-    <div className=" text-neutral-900 font-sans selection:bg-orange-200 overflow-hidden">
+    <div className=" text-neutral-900 font-sans selection:bg-orange-200 overflow-hidden dark:bg-white">
       
       {/* =========================================
           1. HERO SECTION
