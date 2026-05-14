@@ -9,7 +9,7 @@ export default function HeroText() {
   // The phrases to cycle through
   const rotatingPhrases = [
     "Create High-Energy Teams.",
-    "Grow Scalable Businesses.",
+    "Scale Businesses.",
     "Transform Your Life."
   ];
 

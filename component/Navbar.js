@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -76,13 +77,19 @@ export default function Navbar() {
           
           {/* Logo with slight hover lift */}
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-            <Link href="/" className={`flex items-center gap-2 relative z-50 transition-colors duration-300 ${textColorClass}`}>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="current-color">
-                <path d="M12 2C10.8954 2 10 2.89543 10 4C10 5.10457 10.8954 6 12 6C13.1046 6 14 5.10457 14 4C14 2.89543 13.1046 2 12 2Z" fill="currentColor" />
-                <path d="M12 8C8.68629 8 6 10.6863 6 14V22H10V16H14V22H18V14C18 10.6863 15.3137 8 12 8Z" fill="currentColor" />
-              </svg>
-              <span className="text-xl font-bold tracking-tight">Ajay Sethi</span>
-            </Link>
+            <Link
+  href="/"
+  className={`flex items-center gap-2 relative z-50 transition-colors duration-300 `}
+>
+  <Image
+    key={isScrolled ? "logo-dark" : "logo-light"}
+    src={isScrolled ? "/logo.png" : "/2.png"}
+    alt="logo ajay sethi"
+    height={80}
+    width={200}
+    priority
+  />
+</Link>
           </motion.div>
 
           {/* Desktop Navigation */}
