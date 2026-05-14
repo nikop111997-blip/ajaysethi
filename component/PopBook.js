@@ -113,6 +113,17 @@ export default function BookingComponent() {
   ).getDay()
 
   const timeSlots = [
+    "12:00pm",
+    "12:30pm",
+    "1:00pm",
+    "1:30pm",
+    "2:00pm",
+    "2:30pm",
+    "3:00pm",
+    "3:30pm",
+    "4:00pm",
+    "4:30pm",
+    "5:00pm",
     "5:30pm",
     "6:00pm",
     "6:30pm",
@@ -230,7 +241,7 @@ export default function BookingComponent() {
           key={i}
           onClick={() => setSelectedDate(date)}
           className={`
-            w-11 h-11 rounded-xl text-sm transition-all
+            w-11 h-11 rounded-md cursor-pointer text-sm transition-all
             flex items-center justify-center
             ${
               isSelected
@@ -239,7 +250,7 @@ export default function BookingComponent() {
             }
             ${
               !isSelected && isToday
-                ? "font-bold text-[#003460]"
+                ? "font-bold text-[#ff6a3d]"
                 : ""
             }
           `}
@@ -270,7 +281,7 @@ export default function BookingComponent() {
           >
             {/* MOBILE HEADER */}
             <div className="md:hidden flex items-center justify-between p-5 border-b">
-              <h2 className="font-semibold text-lg">
+              <h2 className="font-semibold text-lg text-gray-800">
                 {step === 1
                   ? "Select Date & Time"
                   : "Your Details"}
@@ -293,7 +304,7 @@ export default function BookingComponent() {
                     <X size={18} />
                   </button>
 
-                  <div className="flex items-center gap-3 text-sm font-medium text-gray-500 mb-6">
+                  <div className="flex items-center gap-3 text-sm font-medium text-gray-800 mb-6">
                     <div className="w-9 h-9 rounded-full bg-[#ff6a3d]/10 flex items-center justify-center text-[#ff6a3d]">
                       <Clock3 size={16} />
                     </div>
@@ -335,7 +346,7 @@ export default function BookingComponent() {
                   <div className="flex items-center justify-between mb-8">
                     <h3 className="text-2xl font-semibold text-gray-900">
                       {monthNames[currentMonth]}
-                      <span className="text-[#ff6a3d] ml-2 font-normal">
+                      <span className="text-[#ff6a3d] font-semibold ml-2 font-normal">
                         {currentYear}
                       </span>
                     </h3>
@@ -343,14 +354,14 @@ export default function BookingComponent() {
                     <div className="flex items-center gap-2">
                       <button
                         onClick={handlePrevMonth}
-                        className="w-10 h-10 rounded-full hover:bg-[#ff6a3d] hover:text-white flex items-center justify-center transition"
+                        className="w-10 h-10 text-gray-700 rounded-full hover:bg-[#ff6a3d] hover:text-white flex items-center justify-center transition"
                       >
                         <ChevronLeft size={18} />
                       </button>
 
                       <button
                         onClick={handleNextMonth}
-                        className="w-10 h-10 rounded-full hover:bg-[#ff6a3d] hover:text-white flex items-center justify-center transition"
+                        className="w-10 h-10 text-gray-700  rounded-full hover:bg-[#ff6a3d] hover:text-white flex items-center justify-center transition"
                       >
                         <ChevronRight size={18} />
                       </button>
@@ -387,7 +398,7 @@ export default function BookingComponent() {
                               setSelectedTime(time)
                               setStep(2)
                             }}
-                            className="w-full border border-[#003460]/20 bg-white hover:border-[#ff6a3d] hover:bg-[#ff6a3d]/5 transition rounded-lg py-2 text-[#000000] font-medium"
+                            className="w-full border border-[#003460]/20 bg-white hover:border-[#ff6a3d] hover:bg-[#ff6a3d]/5 transition rounded-lg py-2 text-[#000000] text-sm"
                           >
                             {time}
                           </motion.button>

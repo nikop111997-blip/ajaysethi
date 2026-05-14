@@ -65,7 +65,7 @@ export default function FollowCtaSection() {
 </div>
             </button>
             <Link
-              href="https://linkedin.com/in/ajaysethi" // Replace with actual social link
+              href="https://www.linkedin.com/in/wellnesscoachajay/" // Replace with actual social link
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#1a1a1a] w-fit text-white px-8 py-3.5 rounded-xl text-base font-medium hover:bg-black transition-transform hover:-translate-y-0.5 shadow-lg shadow-black/10 group"
