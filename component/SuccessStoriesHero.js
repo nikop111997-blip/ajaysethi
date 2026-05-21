@@ -52,7 +52,7 @@ export default function SuccessStoriesHero() {
             </span>
             
             {/* Headline from Content Brief */}
-            <h1 className="text-4xl md:text-6xl lg:text-6xl text-white leading-[1.05] tracking-tight mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-6xl font-semibold text-white leading-[1.05] tracking-tight mb-6">
               Real feedback from<br />
               <span className="text-[#ff6a3d]">real transformations.</span>
             </h1>

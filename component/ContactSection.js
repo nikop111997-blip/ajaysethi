@@ -3,7 +3,7 @@ import { ArrowRight, MessageCircle, Mail } from "lucide-react";
 
 export default function ContactSection() {
   return (
-    <section className="w-full bg-white py-20 md:py-32 px-6 md:px-12 font-sans overflow-hidden">
+    <section className="w-full bg-white py-20 md:py-16 px-6 md:px-12 font-sans overflow-hidden">
       {/* PURE CSS SERVER-SIDE ANIMATIONS */}
       <style suppressHydrationWarning>{`
         @keyframes fadeInUp {
@@ -46,7 +46,7 @@ export default function ContactSection() {
               Contact
             </span>
             
-            <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] leading-[1.1] tracking-tight mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] leading-[1.1] tracking-tight mb-6 font-semibold">
               Let's build your <br />
               plan together!
             </h2>

@@ -52,7 +52,7 @@ export default function AboutHero() {
             </span>
             
             {/* Headline from Content Brief */}
-            <h1 className="text-4xl md:text-6xl lg:text-6xl  text-white leading-[1.05] tracking-tight mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-6xl  text-white leading-[1.05] tracking-tight mb-6 font-semibold">
               I don't just teach transformation.<br />
               <span className="text-[#ff6a3d]">I've lived it.</span>
             </h1>

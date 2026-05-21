@@ -45,7 +45,7 @@ export default function WhoIsThisFor() {
   ];
 
   return (
-    <section className="w-full dark:bg-white py-20 md:py-14 px-6 md:px-12 font-sans overflow-hidden">
+    <section className="w-full dark:bg-white py-20 md:py-8 px-6 md:px-12 font-sans overflow-hidden">
       
       {/* PURE CSS SERVER-SIDE ANIMATIONS */}
       <style suppressHydrationWarning>{`
@@ -64,10 +64,10 @@ export default function WhoIsThisFor() {
         {/* =========================================
             HEADER SECTION
             ========================================= */}
-        <div className="flex flex-col sm:flex-row items-center justify-between text-left mb-16 md:mb-24 animate-audience" style={{ animationDelay: "0.1s" }}>
+        <div className="flex flex-col sm:flex-row items-center justify-between text-left mb-16 md:mb-16 animate-audience" style={{ animationDelay: "0.1s" }}>
           <div className="max-w-3xl">
 
-         <h2 className="text-3xl md:text-5xl text-[#1a1a1a] tracking-tight mb-6">
+         <h2 className="text-3xl md:text-5xl text-[#1a1a1a] font-semibold tracking-tight mb-6">
   Stop relying on willpower. <br className="hidden sm:block" />
   Start building <span className="text-[#ff6a3d]">scalable systems.</span>
 </h2>
@@ -108,11 +108,8 @@ export default function WhoIsThisFor() {
                 <div className="w-16 h-16 rounded-xl bg-[#fdfbf9] border border-gray-100 flex items-center justify-center mb-6 group-hover:bg-[#ff6a3d]/10 transition-colors">
                   {item.icon}
                 </div>
-                <span className="text-[#2a2a2a] font-semibold text-sm tracking-wider  mb-2 block">
-                  {item.subtitle}
-                </span>
                 <h3 className="text-2xl font-bold text-[#1a1a1a] tracking-tight">
-                  {item.title}
+                  {item.subtitle}
                 </h3>
               </div>
 
@@ -130,7 +127,7 @@ export default function WhoIsThisFor() {
                   </li>
                 ))}
               </ul>
-
+                <Link href={item.link} className="bg-[#ff6a3d] py-3 hover:scale-105 group-hover:gap-2 text-white rounded-md cursor-pointer flex items-center justify-center gap-1 transform transition-all">Explore More <ArrowRight size={14} className="-rotate-45 group-hover:rotate-0 transform transition-all" /></Link>
             </div>
           ))}
         </div>

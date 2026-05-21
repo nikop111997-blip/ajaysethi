@@ -26,17 +26,18 @@ export default function Hero() {
         {/* Left Column: Trust Badges & Typography */}
         <div className="flex flex-col items-start gap-6 max-w-3xl">
           
-          <motion.div 
+         
+
+          {/* Headline  */}
+        <HeroText />
+         <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="flex flex-col gap-4"
           >
             {/* Top Badge: 30+ Years Experience  */}
-            <div className="flex items-center gap-2 bg-black/40 backdrop-blur-md border border-white/10 rounded-full px-4 py-2 w-max">
-              <CheckCircle className="w-4 h-4 text-white/80" />
-              <span className="text-white text-xs font-medium">30+ Years Experience</span>
-            </div>
+            
 
             {/* Middle Badge: 50,000+ Lives Impacted  */}
             <div className="flex items-center gap-3 mt-2">
@@ -55,10 +56,11 @@ export default function Hero() {
                 </span>
               </div>
             </div>
+            <div className="flex items-center gap-2 bg-black/40 backdrop-blur-md border border-white/10 rounded-full px-4 py-2 w-max">
+              <CheckCircle className="w-4 h-4 text-white/80" />
+              <span className="text-white text-xs font-medium">30+ Years Experience</span>
+            </div>
           </motion.div>
-
-          {/* Headline  */}
-        <HeroText />
         </div>
 
         {/* Right Column: CTA Box */}
@@ -71,20 +73,17 @@ export default function Hero() {
           {/* Orange CTA Card mimicking the reference */}
           <div className="group bg-[#ff6a3d] hover:bg-[#ff5a2b] transition-colors cursor-pointer rounded-2xl px-5 py-2 sm:p-5 flex items-center justify-between gap-8 w-full sm:w-[280px] shadow-2xl">
             <div className="flex flex-row sm:flex-col justify-center sm:justify-between items-center sm:items-start gap-2">
-              <Calendar className="w-5 h-5 text-black mb-2" />
-              <span className="text-black text-xs font-semibold uppercase tracking-wider mb-1">
+              <Calendar className="w-5 h-5 text-white mb-2" />
+              <span className="text-white text-xs font-bold uppercase tracking-wider mb-1">
                 Free 30-min Clarity Call
-              </span>
-              <span className="text-black text-lg font-bold hidden sm:block">
-                Start With Clarity
               </span>
             </div>
             
-            <div className="bg-[#1a1a1a] rounded-xl relative overflow-hidden flex items-center justify-center w-10 h-10">
-  <ArrowRight className="w-5 h-5 text-white absolute transition-transform duration-300 ease-in-out group-hover:translate-x-[150%]" />
+            <div className="bg-[#ffffff] rounded-xl relative overflow-hidden flex items-center justify-center w-10 h-10">
+  <ArrowRight className="w-5 h-5 text-[#1a1a1a] absolute transition-transform duration-300 ease-in-out group-hover:translate-x-[150%]" />
   
   
-  <ArrowRight className="w-5 h-5 text-white absolute -translate-x-[150%] transition-transform duration-300 ease-in-out group-hover:translate-x-0" />
+  <ArrowRight className="w-5 h-5 text-[#1a1a1a] absolute -translate-x-[150%] transition-transform duration-300 ease-in-out group-hover:translate-x-0" />
 </div>
           </div>
 

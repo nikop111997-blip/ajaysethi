@@ -44,11 +44,11 @@ export default function FaqSection() {
             LEFT COLUMN: Sticky Header & CTA
             ========================================= */}
         <div className="lg:col-span-5 flex flex-col lg:sticky lg:top-32">
-          <span className="text-gray-400 text-sm font-medium tracking-wide uppercase mb-4">
+          <span className="text-gray-400 text-sm font-medium tracking-wide uppercase mb-4 ">
             FAQ
           </span>
           
-          <h3 className="text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] leading-[1.1] tracking-tight mb-6">
+          <h3 className="text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] leading-[1.1] tracking-tight mb-6 font-semibold">
             Frequently <br className="hidden md:block" />
             Asked Questions
           </h3>

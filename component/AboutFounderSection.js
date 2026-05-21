@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutFounderSection() {
   return (
-    <section className="w-full py-20 md:py-32 px-6 md:px-12 bg-zinc-950 overflow-hidden">
+    <section className="w-full py-20 md:py-16 px-6 md:px-12 bg-zinc-950 overflow-hidden">
       
       {/* PURE CSS SERVER-SIDE ANIMATIONS */}
       <style suppressHydrationWarning>{`
@@ -37,7 +37,7 @@ export default function AboutFounderSection() {
           <div className="animate-founder" style={{ animationDelay: "0.1s" }}>
             
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#ffffff] leading-[1.1] tracking-tight mb-8">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#ffffff] leading-[1.1] tracking-tight mb-8">
               Meet your Wellness and <br className="hidden md:block" />
               <span className="text-[#ff6a3d]">Transformation</span> coach!
             </h2>
@@ -82,7 +82,6 @@ export default function AboutFounderSection() {
                   className="object-contain object-left brightness-0 invert"
                 />
               </div>
-              <span className="text-sm font-bold tracking-widest uppercase text-[#ffffff]">Ajay Singh Sethi</span>
             </div>
 
           </div>

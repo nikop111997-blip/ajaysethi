@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function FollowCtaSection() {
   return (
-    <section className="w-full bg-white py-20 md:py-16 px-6 md:px-12 font-sans">
+    <section className="w-full bg-white py-20 md:py-12 px-6 md:px-12 font-sans">
       
       {/* PURE CSS SERVER-SIDE ANIMATIONS */}
       <style suppressHydrationWarning>{`
@@ -49,7 +49,7 @@ export default function FollowCtaSection() {
               ========================================= */}
           <div className="relative z-20 w-full md:w-7/12 p-10 md:p-16 lg:pr-24 flex flex-col justify-center items-center md:items-start text-center md:text-left">
             
-            <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#1a1a1a] leading-[1.2] tracking-tight mb-8 ">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#1a1a1a] leading-[1.2] font-semibold tracking-tight mb-8 ">
               Follow for proven systems on sustainable health, business growth, and leadership.
             </h2>
             <div className="flex flex-col items-center sm:flex-row gap-2">

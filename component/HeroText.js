@@ -47,7 +47,7 @@ export default function HeroText() {
             // Cinematic easing
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }} 
             // Absolute positioning allows new text to overlap the old text during the transition
-            className="block absolute top-0 left-0 w-full text-transparent bg-clip-text bg-gradient-to-r from-[#ff6a3d] to-[#ffaa8b]"
+            className="block absolute top-0 left-0 w-full text-transparent bg-clip-text bg-gradient-to-r font-semibold from-[#ff6a3d] to-[#ffaa8b]"
           >
             {rotatingPhrases[index]}
           </motion.span>

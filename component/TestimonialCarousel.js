@@ -65,12 +65,12 @@ export default function TestimonialCarousel() {
   ];
 
   return (
-    <section className="w-full py-10 md:py-32 px-6 md:px-12 font-sans overflow-hidden">
+    <section className="w-full py-10 md:py-16 px-6 md:px-12 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         {/* Header */}
-        <div className="flex flex-col sm:flex-row items-center mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-5xl text-[#1a1a1a]  tracking-tight mb-4 dark:text-gray-50">
+        <div className="flex flex-col sm:flex-row items-center mb-12 md:mb-16 ">
+          <h2 className="text-4xl md:text-5xl text-[#1a1a1a]  tracking-tight mb-4 dark:text-gray-50 font-semibold">
             Stories of Lasting <span className="text-[#ff6a3d]">Transformation</span>
           </h2>
           <p className="text-gray-800 text-lg max-w-2xl mx-auto text-left sm:text-right dark:text-gray-300">

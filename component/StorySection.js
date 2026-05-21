@@ -10,7 +10,7 @@ export default function CreativeStorySection() {
   };
 
   return (
-    <section className="dark:bg-white text-neutral-900 py-24 font-sans overflow-hidden">
+    <section className="dark:bg-white text-neutral-900 py-16 font-sans overflow-hidden">
       
       {/* 1. EDITORIAL HEADER */}
       <div className="max-w-7xl mx-auto px-4 mb-16">
@@ -19,7 +19,7 @@ export default function CreativeStorySection() {
             <div className="w-12 h-[2px] bg-[#ff6a3d]"></div>
             <span className="text-[#ff6a3d] font-bold tracking-widest uppercase text-sm">The Origin Story</span>
           </div>
-          <h2 className="text-5xl md:text-6xl tracking-tight leading-[1.05] mb-8">
+          <h2 className="text-5xl md:text-6xl tracking-tight leading-[1.05] mb-8 font-semibold">
             From Performance <br className="hidden md:block"/>
             <span className="text-[#ff6a3d]">to Purpose.</span>
           </h2>
@@ -91,7 +91,7 @@ export default function CreativeStorySection() {
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className=" border border-orange-200 rounded-[1rem] p-6 md:p-20 text-center relative overflow-hidden">
           
           <div className="relative z-10 max-w-7xl mx-auto">
-            <h2 className="text-2xl md:text-4xl text-neutral-900 leading-tight mb-8 text-left sm:text-center">
+            <h2 className="text-2xl md:text-4xl text-neutral-900 font-semibold leading-tight mb-8 text-left sm:text-center">
               Inspired by the work of Dave Brailsford, I focused on one core principle: 
               <span className="text-[#ff6a3d]">Small habits, done consistently, create extraordinary results.</span>
             </h2>
@@ -107,7 +107,7 @@ export default function CreativeStorySection() {
       {/* 4. WHAT I DO TODAY */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 mb-16">
         <div className="text-left mb-16">
-          <h2 className="text-3xl md:text-5xl  text-neutral-900 mb-6">What I Do Today</h2>
+          <h2 className="text-3xl md:text-5xl  text-neutral-900 mb-6 font-semibold">What I Do Today</h2>
           <p className="text-md sm:text-lg text-neutral-800 max-w-2xl">
             What started as a response during a crisis became a community, a system, and a way of living. Today, my work is focused on three areas:
           </p>

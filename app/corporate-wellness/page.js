@@ -98,7 +98,7 @@ export default function CorporateWellnessLandingPage() {
             </span>
             
             {/* Headline */}
-            <h1 className="text-4xl md:text-6xl lg:text-6xl text-white leading-[1.05] tracking-tight mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-6xl text-white leading-[1.05] tracking-tight mb-6 font-semibold">
               Build a Healthier, <br />
               <span className="text-[#ff6a3d]">More Productive Team.</span>
             </h1>
@@ -111,9 +111,9 @@ export default function CorporateWellnessLandingPage() {
             {/* Anchor Link / CTA */}
             <Link
               href="/contact-us"
-              className="inline-flex items-center gap-4 bg-[#ff6a3d] text-[#ffffff] py-2 pl-6 pr-4 rounded-2xl text-base font-semibold hover:bg-[#ff7a53] transition-colors group"
+              className="inline-flex items-center gap-4 bg-[#ff6a3d] text-[#ffffff] py-2 pl-6 pr-4 rounded-xl text-base font-semibold hover:bg-[#ff7a53] transition-colors group"
             >
-              Book a Consultation
+              Start with Clarity
               <div className="bg-[#1a1a1a] rounded-xl relative overflow-hidden flex items-center justify-center w-10 h-10">
                 <ArrowRight className="w-5 h-5 text-white absolute transition-transform duration-300 ease-in-out group-hover:translate-x-[150%]" />
                 <ArrowRight className="w-5 h-5 text-white absolute -translate-x-[150%] transition-transform duration-300 ease-in-out group-hover:translate-x-0" />
@@ -157,10 +157,10 @@ export default function CorporateWellnessLandingPage() {
       {/* =========================================
           2. PAIN POINTS GRID (Sound Familiar?)
           ========================================= */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
+      <section className="py-16 px-6 max-w-7xl mx-auto">
         <div className="text-left mb-16">
           <span className="text-sm font-medium text-gray-400 mb-3 block">Who It's For</span>
-          <h2 className="text-3xl md:text-4xl text-neutral-900">Are Your Teams Facing These Challenges?</h2>
+          <h2 className="text-3xl md:text-4xl text-neutral-900 font-semibold">Are Your Teams Facing These Challenges?</h2>
         </div>
 
         <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -184,14 +184,14 @@ export default function CorporateWellnessLandingPage() {
       {/* =========================================
           3. BENEFITS SPLIT (Why Our Approach Works)
           ========================================= */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
+      <section className="py-16 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="relative rounded-[1rem] overflow-hidden shadow-2xl border border-neutral-200 bg-neutral-200 aspect-[4/5]">
             <Image src="/jums.jpg" fill alt="Corporate Wellness Transformation" className="w-full h-full object-cover grayscale" />
           </motion.div>
           
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h2 className="text-3xl md:text-4xl mb-6 text-neutral-900">Why This Works</h2>
+            <h2 className="text-3xl md:text-4xl mb-6 text-neutral-900 font-semibold">Why This Works</h2>
             <p className="text-lg text-neutral-800 mb-8">Most corporate wellness programs fail because they only focus on awareness. Our approach focuses on making wellness a seamless part of your company culture.</p>
             
             <div className="">
@@ -224,10 +224,10 @@ export default function CorporateWellnessLandingPage() {
       {/* =========================================
           5. OUTCOMES (Experience & Track Record)
           ========================================= */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
+      <section className="py-16 px-6 max-w-7xl mx-auto">
         <div className="mb-12 text-center md:text-left">
           <span className="text-sm font-medium text-gray-400 mb-3 block">What You Can Expect</span>
-          <h2 className="text-3xl md:text-4xl font-medium text-neutral-900">Comprehensive Organizational Outcomes.</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-neutral-900 font-semibold">Comprehensive Organizational Outcomes.</h2>
         </div>
 
         <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -321,7 +321,7 @@ export default function CorporateWellnessLandingPage() {
           ========================================= */}
       <section className="py-12 pb-12 px-6 max-w-7xl mx-auto bg-white my-6">
         <div className="text-left mb-16">
-          <h2 className="text-3xl md:text-6xl text-neutral-900 mb-4">How We Engage</h2>
+          <h2 className="text-3xl md:text-6xl text-neutral-900 mb-4 font-semibold">How We Engage</h2>
           <p className="text-lg text-neutral-800 font-medium">A structured approach to designing a solution that actually works for your company.</p>
         </div>
 

@@ -23,7 +23,7 @@ export default function StrugglesBento() {
             LEFT COLUMN: Text & CTA
             (Adjusted spacing to match reference perfectly)
             ========================================= */}
-        <div className="xl:col-span-5 flex flex-col items-start justify-center py-10">
+        <div className="xl:col-span-5 flex flex-col items-start justify-start py-4">
           <span 
             className="text-sm font-semibold text-gray-400 tracking-wider mb-6 animate-bento"
             style={{ animationDelay: "0.1s" }}
@@ -32,7 +32,7 @@ export default function StrugglesBento() {
           </span>
           
           <h2 
-            className="text-5xl md:text-6xl  text-white leading-[1.05] tracking-tight mb-8 animate-bento"
+            className="text-5xl md:text-5xl  text-white leading-[1.05] font-semibold tracking-tight mb-8 animate-bento"
             style={{ animationDelay: "0.2s" }}
           >
             Feeling stuck as a wellness professional?

@@ -98,7 +98,7 @@ export default function WellnessBusinessCoachingPage() {
             </span>
             
             {/* Headline */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl text-white leading-[1.05] tracking-tight mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-6xl font-semibold text-white leading-[1.05] tracking-tight mb-6">
               Turn Your Passion Into a <br />
               <span className="text-[#ff6a3d]">Profitable Business.</span>
             </h1>
@@ -157,10 +157,10 @@ export default function WellnessBusinessCoachingPage() {
       {/* =========================================
           2. PAIN POINTS GRID (Sound Familiar?)
           ========================================= */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
+      <section className="py-16 px-6 max-w-7xl mx-auto">
         <div className="text-left mb-16">
           <span className="text-sm font-medium text-gray-400 mb-3 block">Who It's For</span>
-          <h2 className="text-3xl md:text-4xl text-neutral-900">Are You Struggling to Scale Your Wellness Career?</h2>
+          <h2 className="text-3xl md:text-4xl text-neutral-900 font-semibold">Are You Struggling to Scale Your Wellness Career?</h2>
         </div>
 
         <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -184,14 +184,14 @@ export default function WellnessBusinessCoachingPage() {
       {/* =========================================
           3. BENEFITS SPLIT (Why Our Approach Works)
           ========================================= */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
+      <section className="py-16 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="relative rounded-[1rem] overflow-hidden shadow-2xl border border-neutral-200 bg-neutral-200 aspect-[4/5]">
             <Image src="/jump.jpg" fill alt="Wellness Business Transformation" className="w-full h-full object-cover grayscale" />
           </motion.div>
           
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h2 className="text-3xl md:text-4xl mb-6 text-neutral-900">Why This Framework Works</h2>
+            <h2 className="text-3xl md:text-4xl mb-6 text-neutral-900 font-semibold">Why This Framework Works</h2>
             <p className="text-lg text-neutral-800 mb-8">Most wellness professionals struggle not because they lack skill—but because they lack positioning, systems, and business clarity.</p>
             
             <div className="">
@@ -224,10 +224,10 @@ export default function WellnessBusinessCoachingPage() {
       {/* =========================================
           5. OUTCOMES (Experience & Track Record)
           ========================================= */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
+      <section className="py-16 px-6 max-w-7xl mx-auto">
         <div className="mb-12 text-center md:text-left">
           <span className="text-sm font-medium text-gray-400 mb-3 block">What You Can Expect</span>
-          <h2 className="text-3xl md:text-4xl font-medium text-neutral-900">Build a Business That Actually Works.</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-neutral-900 font-semibold">Build a Business That Actually Works.</h2>
         </div>
 
         <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -320,7 +320,7 @@ export default function WellnessBusinessCoachingPage() {
           ========================================= */}
       <section className="py-12 pb-12 px-6 max-w-7xl mx-auto bg-white my-6">
         <div className="text-left mb-16">
-          <h2 className="text-3xl md:text-6xl text-neutral-900 mb-4">Your Growth Pathway</h2>
+          <h2 className="text-3xl md:text-6xl text-neutral-900 mb-4 font-semibold">Your Growth Pathway</h2>
           <p className="text-lg text-neutral-800 font-medium">A structured timeline to take you from a skilled professional to a profitable business owner.</p>
         </div>
 

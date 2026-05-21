@@ -4,7 +4,7 @@ import { ArrowRight, Star } from "lucide-react";
 
 export default function AboutFeatureSection() {
   return (
-    <section className="w-full py-20 md:py-32 px-6 md:px-12 overflow-hidden">
+    <section className="w-full py-20 md:py-20 px-6 md:px-12 overflow-hidden">
       
       {/* PURE CSS SERVER-SIDE ANIMATIONS */}
       <style suppressHydrationWarning>{`
@@ -76,7 +76,7 @@ export default function AboutFeatureSection() {
           </div>
 
           {/* Headline */}
-          <h2 className="text-4xl md:text-5xl lg:text-5xl text-[#1a1a1a] leading-[1.05] tracking-tight mb-6 dark:text-gray-50">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-semibold text-[#1a1a1a] leading-[1.05] tracking-tight mb-6 dark:text-gray-50">
             Empowering your journey to sustainable health
           </h2>
 
@@ -88,7 +88,7 @@ export default function AboutFeatureSection() {
           {/* Stats Box */}
           <div className="w-full bg-white rounded-3xl p-8 flex flex-wrap sm:flex-nowrap items-center justify-between shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 mb-10 gap-6">
             <div className="flex flex-col items-center sm:items-start flex-1">
-              <span className="text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-1 tracking-tight">13+</span>
+              <span className="text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-1 tracking-tight">30+</span>
               <span className="text-gray-800 text-sm font-medium text-center sm:text-left">Years of Experience</span>
             </div>
             

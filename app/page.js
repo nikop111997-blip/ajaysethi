@@ -20,9 +20,10 @@ export default function Home() {
     <div className=" font-sans dark:bg-black">
       <Hero />
       <StatsSection />
-      <AboutSection />
+      
       <WhoIsThisFor />
       <StrugglesSection />
+      <AboutSection />
       <ServicesCarousel />
       <CorporateChallenges />
       <ProcessSection />

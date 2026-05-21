@@ -3,7 +3,7 @@ import { BatteryWarning, Users, Activity } from "lucide-react";
 
 export default function CorporateChallenges() {
   return (
-    <section className="w-full bg-[#0a0a0a] py-20 md:py-32 px-6 md:px-12 font-sans overflow-hidden">
+    <section className="w-full bg-[#0a0a0a] py-20 md:py-20 px-6 md:px-12 font-sans overflow-hidden">
       {/* PURE CSS SERVER-SIDE ANIMATIONS */}
       <style suppressHydrationWarning>{`
         @keyframes fadeUp {
@@ -22,7 +22,7 @@ export default function CorporateChallenges() {
             HEADER SECTION
             ========================================= */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16 animate-card" style={{ animationDelay: "0.1s" }}>
-          <h2 className="text-4xl md:text-5xl lg:text-5xl  text-white leading-[1.1] tracking-tight max-w-2xl">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-semibold  text-white leading-[1.1] tracking-tight max-w-2xl">
             Your Team Isn't Lacking Effort.<br />
             <span className="text-[#ff6a3d]">They're Lacking Systems.</span>
           </h2>

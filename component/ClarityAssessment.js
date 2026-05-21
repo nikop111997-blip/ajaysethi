@@ -141,7 +141,7 @@ export default function HealthAssessment() {
   };
 
   return (
-    <section className="min-h-screen dark:bg-white flex flex-col items-center justify-center p-4 md:p-8 relative overflow-hidden">
+    <section className=" dark:bg-white flex flex-col items-center justify-center p-4 md:p-8 md:py-12 relative overflow-hidden">
       
 
       {/* Main Glass Container */}
@@ -165,7 +165,7 @@ export default function HealthAssessment() {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="relative z-10 bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-3xl text-white shadow-[0_8px_32px_0_rgba(0,0,0,0.1)]"
           >
-            <h2 className="text-4xl mb-4 text-[#ff6a3d] tracking-tight">Ready to transform?</h2>
+            <h2 className="text-4xl mb-4 text-[#ff6a3d] tracking-tight font-semibold">Ready to transform?</h2>
             <p className="text-orange-50 text-md mb-6 leading-relaxed">
               Find out exactly what's holding you back from sustainable health. Take the assessment to get clarity.
             </p>

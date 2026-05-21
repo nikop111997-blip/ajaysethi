@@ -90,8 +90,6 @@ const keynoteTopics = [
 ];
 
 const pastEvents = [
-  { name: 'Future Business Builder School', org: 'Herbalife International', year: 'March 2026', loc: 'JECC' },
-  { name: 'Wellness Lifestyle Day', org: 'Corporate Wellness', year: 'Sept 2025', loc: 'Hyderabad' },
   { name: 'Kayapalat Coach Academy', org: 'Annual Event', year: 'Yearly', loc: 'In-Person / Online' },
   { name: 'Kayaalat Wellness Retreat', org: 'Annual Event', year: 'Yearly', loc: 'Various Locations' },
   { name: 'Virtual Masterclasses', org: 'Global Audience', year: 'Ongoing', loc: 'Online' },
@@ -185,7 +183,7 @@ const GallerySection = () => {
       </div>
 
       {/* --- NEW SECTION: SPEAKING ENGAGEMENTS INTRO --- */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 md:pt-32 relative z-30">
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 md:pt-32 relative z-30">
         <span className="text-gray-400 text-xs md:text-sm mb-4 block">
           Speaking Engagements
         </span>
@@ -198,10 +196,10 @@ const GallerySection = () => {
         <p className="text-md md:text-lg text-neutral-500 font-medium italic">
           "Each session is designed to be engaging, actionable, and immediately applicable to real life."
         </p>
-      </div>
+      </div> */}
 
       {/* --- NEW SECTION: KEYNOTE TOPICS --- */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-12 relative z-30">
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-12 relative z-30">
 
         <motion.div layout className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <AnimatePresence>
@@ -239,11 +237,11 @@ const GallerySection = () => {
           </AnimatePresence>
         </motion.div>
 
-       
-      </div>
+      
+      </div> */}
 
       {/* --- NEW SECTION: EVENTS & DIFFERENTIATORS --- */}
-      <div className="bg-neutral-900 text-white py-20 md:py-32 relative z-30">
+      <div className="bg-neutral-900 text-white py-20 md:py-16 relative z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
             

@@ -3,7 +3,7 @@ import { Target, Zap, Shield, Star } from "lucide-react";
 
 export default function ApproachSection() {
   return (
-    <section className="w-full py-20 md:py-24 px-6 md:px-12 overflow-hidden text-center">
+    <section className="w-full py-20 md:py-16 px-6 md:px-12 overflow-hidden text-center">
       
       {/* PURE CSS SERVER-SIDE ANIMATIONS */}
       <style suppressHydrationWarning>{`
@@ -30,7 +30,7 @@ export default function ApproachSection() {
             <span className="text-sm font-bold text-[#1a1a1a] tracking-wide">Our Approach</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] text-left sm:text-center tracking-tight mb-6 max-w-6xl dark:text-gray-50">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] font-semibold text-left sm:text-center tracking-tight mb-6 max-w-6xl dark:text-gray-50">
             Focused on <span className="text-[#ff6a3d]">sustainable</span> systems
           </h2>
 

@@ -25,7 +25,6 @@ import FollowCtaSection from '@/component/FollowCtaSection';
 import TransformationStories from '@/component/TransformationStories';
 
 export default function PersonalWellnessLandingPage() {
-  const [openFaq, setOpenFaq] = useState(0);
 
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
@@ -55,7 +54,7 @@ export default function PersonalWellnessLandingPage() {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div initial="hidden" animate="visible" variants={fadeUp} className="max-w-xl">
-            <h1 className="text-4xl md:text-6xl font-medium tracking-tight leading-[1.1] mb-6 text-neutral-900">
+            <h1 className="text-4xl md:text-6xl font-medium tracking-tight leading-[1.1] font-semibold mb-6 text-neutral-900">
               Build Lasting Health. <br />
               <span className="text-[#ff6a3d]">Results That Last.</span>
             </h1>
@@ -108,10 +107,10 @@ export default function PersonalWellnessLandingPage() {
       {/* =========================================
           2. PAIN POINTS GRID (Sound Familiar?)
           ========================================= */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
+      <section className="py-16 px-6 max-w-7xl mx-auto">
         <div className="text-left mb-16">
           <span className="text-sm font-medium text-gray-400 mb-3 block">Sound Familiar?</span>
-          <h2 className="text-3xl md:text-4xl text-neutral-900">You Have Big Goals, But Something Keeps Holding You Back.</h2>
+          <h2 className="text-3xl md:text-4xl text-neutral-900 font-semibold">You Have Big Goals, But Something Keeps Holding You Back.</h2>
         </div>
 
         <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -135,14 +134,14 @@ export default function PersonalWellnessLandingPage() {
       {/* =========================================
           3. BENEFITS SPLIT (Why Our Approach Works)
           ========================================= */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
+      <section className="py-16 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="relative rounded-[1rem] overflow-hidden shadow-2xl border border-neutral-200 bg-neutral-200 aspect-[4/5]">
             <Image src="/pera.jpg" fill alt="Consistent Transformation" className="w-full h-full object-cover" />
           </motion.div>
           
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h2 className="text-3xl md:text-4xl mb-6 text-neutral-900">Why Our Approach Works</h2>
+            <h2 className="text-3xl md:text-4xl mb-6 text-neutral-900 font-semibold">Why Our Approach Works</h2>
             <p className="text-lg text-neutral-800 mb-8">Most people fail because they rely on extreme workouts, hunger-prone diet plans, and willpower. Personal Wellness replaces all of that.</p>
             
             <div className="">
@@ -175,10 +174,10 @@ export default function PersonalWellnessLandingPage() {
       {/* =========================================
           5. OUTCOMES (Experience & Track Record)
           ========================================= */}
-      <section className=" px-6 max-w-7xl mx-auto">
+      <section className="py-8 px-6 max-w-7xl mx-auto">
         <div className="mb-12">
           <span className="text-sm font-medium text-gray-400 mb-3 block">What You Get</span>
-          <h2 className="text-3xl md:text-4xl font-medium text-neutral-900">Transformation from the Inside Out.</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-neutral-900 font-semibold">Transformation from the Inside Out.</h2>
         </div>
 
         <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -217,41 +216,106 @@ export default function PersonalWellnessLandingPage() {
       {/* =========================================
           6. PROGRAM / PRICING BANNER
           ========================================= */}
-      <section className="py-12 px-6 max-w-7xl mx-auto">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-[#ff6a3d] rounded-[1rem] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden border border-[#c1e1cd]">
-          <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/40 to-transparent"></div>
-          
-          <div className="relative z-10 flex-1">
-            <span className="text-sm font-medium tracking-widest text-[#fff7ee] uppercase mb-2 block">Popular Program</span>
-            <h2 className="text-3xl md:text-5xl font-medium text-neutral-50 mb-6">Personal Wellness</h2>
-            <p className="text-lg text-neutral-100 mb-6 max-w-lg font-medium">
-              Designed to help you build lasting health without extreme diets or disrupting your lifestyle.
-            </p>
-            <ul className="space-y-2 mb-8">
-              <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Daily Live Coaching (Mon–Sat)</li>
-              <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Structured Weekly Themes</li>
-              <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> No gym dependency</li>
-              <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Fully Online (accessible anywhere)</li>
-            </ul>
-          </div>
+    <section className="py-12 px-6 max-w-7xl mx-auto">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    
+    {/* Card 1: Community Wellness */}
+    <motion.div 
+      initial="hidden" 
+      whileInView="visible" 
+      viewport={{ once: true }} 
+      variants={fadeUp} 
+      className="bg-[#ff6a3d] rounded-[1rem] p-8 md:p-12 flex flex-col relative overflow-hidden border border-[#c1e1cd] h-full"
+    >
+      <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/40 to-transparent"></div>
+      
+      <div className="relative z-10 flex-1 mb-8">
+        <span className="text-sm font-medium tracking-widest text-[#fff7ee] uppercase mb-2 block">Popular Program</span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-50 mb-6">Community Wellness</h2>
+        <p className="text-lg text-neutral-100 mb-6 font-medium">
+          Designed to help you build lasting health without extreme diets or disrupting your lifestyle.
+        </p>
+        <ul className="space-y-3 mb-8">
+          <li className="flex items-center gap-3 font-medium text-neutral-50">
+            <CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Daily Live Coaching (Mon–Sat)
+          </li>
+          <li className="flex items-center gap-3 font-medium text-neutral-50">
+            <CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Structured Weekly Themes
+          </li>
+          <li className="flex items-center gap-3 font-medium text-neutral-50">
+            <CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> No gym dependency
+          </li>
+          <li className="flex items-center gap-3 font-medium text-neutral-50">
+            <CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Fully Online (accessible anywhere)
+          </li>
+        </ul>
+      </div>
 
-          <div className="relative z-10 flex flex-col items-center md:items-start bg-white p-8 rounded-xl shadow-xl border border-white/50 w-full md:w-auto min-w-[320px]">
-            <div className="text-5xl font-medium text-neutral-900 mb-2">₹8,484</div>
-            <div className="text-sm font-medium text-neutral-800 uppercase tracking-wider mb-8">Per Month</div>
-            <button className="open-booking-modal w-full py-4 bg-[#0f172a] text-white font-medium rounded-lg hover:bg-neutral-800 transition-all shadow-lg flex items-center justify-center gap-2">
-              Apply Now <ArrowRight className="w-5 h-5" />
-            </button>
-            <p className="text-xs text-neutral-800 mt-4 text-center w-full font-medium">Replaces multiple gym memberships and trial-and-error diets.</p>
-          </div>
-        </motion.div>
-      </section>
+      <div className="relative z-10 bg-white p-8 rounded-xl shadow-xl border border-white/50 w-full mt-auto">
+        <div className="text-5xl font-medium text-neutral-900 mb-2">₹8,484</div>
+        <div className="text-sm font-medium text-neutral-800 uppercase tracking-wider mb-8">Per Month</div>
+        <button className="open-booking-modal w-full py-4 bg-[#0f172a] text-white font-medium rounded-lg hover:bg-neutral-800 transition-all shadow-lg flex items-center justify-center gap-2">
+          Apply Now <ArrowRight className="w-5 h-5" />
+        </button>
+        <p className="text-xs text-neutral-800 mt-4 text-center w-full font-medium">
+          Replaces multiple gym memberships and trial-and-error diets.
+        </p>
+      </div>
+    </motion.div>
+
+    {/* Card 2: 1-to-1 Wellness */}
+    <motion.div 
+      initial="hidden" 
+      whileInView="visible" 
+      viewport={{ once: true }} 
+      variants={fadeUp} 
+      className="bg-[#0f172a] rounded-[1rem] p-8 md:p-12 flex flex-col relative overflow-hidden border border-neutral-800 h-full"
+    >
+      <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/10 to-transparent"></div>
+      
+      <div className="relative z-10 flex-1 mb-8">
+        <span className="text-sm font-medium tracking-widest text-neutral-400 uppercase mb-2 block">Premium Experience</span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-white mb-6">1-to-1 Wellness</h2>
+        <p className="text-lg text-neutral-300 mb-6 font-medium">
+          Highly personalized one-on-one coaching for maximum accountability and bespoke health programming.
+        </p>
+        <ul className="space-y-3 mb-8">
+          <li className="flex items-center gap-3 font-medium text-neutral-200">
+            <CheckCircle2 className="w-5 h-5 text-[#ff6a3d]" /> Direct 1-on-1 Daily Access
+          </li>
+          <li className="flex items-center gap-3 font-medium text-neutral-200">
+            <CheckCircle2 className="w-5 h-5 text-[#ff6a3d]" /> Custom Nutrition & Workout Plans
+          </li>
+          <li className="flex items-center gap-3 font-medium text-neutral-200">
+            <CheckCircle2 className="w-5 h-5 text-[#ff6a3d]" /> Dedicated Accountability Coach
+          </li>
+          <li className="flex items-center gap-3 font-medium text-neutral-200">
+            <CheckCircle2 className="w-5 h-5 text-[#ff6a3d]" /> Deep-dive Progress Reviews
+          </li>
+        </ul>
+      </div>
+
+      <div className="relative z-10 bg-white p-8 rounded-xl shadow-xl border border-white/50 w-full mt-auto">
+        <div className="text-5xl font-medium text-neutral-900 mb-2">₹1,75,000</div>
+        <div className="text-sm font-medium text-neutral-800 uppercase tracking-wider mb-8">Per Program</div>
+        <button className="open-booking-modal w-full py-4 bg-[#ff6a3d] text-white font-medium rounded-lg hover:bg-[#e85b30] transition-all shadow-lg flex items-center justify-center gap-2">
+          Apply Now <ArrowRight className="w-5 h-5" />
+        </button>
+        <p className="text-xs text-neutral-800 mt-4 text-center w-full font-medium">
+          The ultimate investment in your long-term health and wellness.
+        </p>
+      </div>
+    </motion.div>
+
+  </div>
+</section>
 
       {/* =========================================
           7. HOW WE WORK (4 Steps)
           ========================================= */}
       <section className="py-12 pb-12 px-6 max-w-7xl mx-auto bg-white my-6">
         <div className="text-left mb-16">
-          <h2 className="text-3xl md:text-6xl text-neutral-900 mb-4">How It Works</h2>
+          <h2 className="text-3xl md:text-6xl text-neutral-900 mb-4 font-semibold">How It Works</h2>
           <p className="text-lg text-neutral-800 font-medium">A simple, proven process to get you from where you are to where you want to be.</p>
         </div>
 

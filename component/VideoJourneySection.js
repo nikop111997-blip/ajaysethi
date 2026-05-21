@@ -31,23 +31,19 @@ export default function VideoJourneySection() {
             ========================================= */}
         <div className="flex flex-col items-start text-white animate-card" style={{ animationDelay: "0.1s" }}>
           
-          {/* Eyebrow Pill */}
-          <div className="flex items-center gap-2 mb-6 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 shadow-xl">
-            <span className="w-2 h-2 rounded-full bg-[#ff6a3d] animate-pulse"></span>
-            <span className="text-sm font-medium tracking-wide text-white/90">Watch Our Approach</span>
-          </div>
+      
           
           {/* Headline */}
-          <h2 className="text-4xl md:text-5xl lg:text-5xl leading-[1.05] tracking-tight mb-8 max-w-lg">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl leading-[1.05] tracking-tight mb-8 max-w-lg font-semibold">
             Watch the video and start your <span className="text-[#ff6a3d]">transformation.</span>
           </h2>
           
           {/* CTA Button */}
           <Link
             href="/contact-us"
-            className="inline-flex items-center gap-4 bg-[#1a1a1a] text-white py-2 pl-6 pr-4 rounded-full text-base font-bold hover:bg-black transition-colors group border border-white/10"
+            className="inline-flex items-center gap-4 bg-[#1a1a1a] text-white py-2 pl-6 pr-4 rounded-xl text-base font-bold hover:bg-black transition-colors group border border-white/10"
           >
-            Connect With Me
+            Start with Clarity
             <div className="bg-[#ff6a3d] rounded-full relative overflow-hidden flex items-center justify-center w-10 h-10">
   <ArrowRight className="w-5 h-5 text-white absolute transition-transform duration-300 ease-in-out group-hover:translate-x-[150%]" />
   

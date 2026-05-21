@@ -28,7 +28,7 @@ export default function ProcessSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-20 md:py-32 px-6 md:px-12 font-sans overflow-hidden">
+    <section className="w-full bg-white py-20 md:pt-8 md:pb-16 px-6 md:px-12 font-sans overflow-hidden">
       {/* PURE CSS SERVER-SIDE ANIMATIONS */}
       <style suppressHydrationWarning>{`
         @keyframes fadeInUp {
@@ -53,7 +53,7 @@ export default function ProcessSection() {
               How it works
             </span>
             
-            <h2 className="text-4xl md:text-5xl lg:text-5xl text-[#1a1a1a] leading-[1.1] tracking-tight mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-5xl text-[#1a1a1a] font-semibold leading-[1.1] tracking-tight mb-6">
               Your path to <br className="hidden md:block" />
               sustainable change
             </h2>
@@ -94,7 +94,7 @@ export default function ProcessSection() {
         {/* =========================================
             RIGHT COLUMN: The Steps
             ========================================= */}
-        <div className="flex flex-col gap-12 md:gap-16 lg:pt-12">
+        <div className="flex flex-col gap-12 md:gap-6 lg:pt-12">
           {steps.map((step, index) => (
             <div 
               key={index} 

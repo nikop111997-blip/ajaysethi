@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function BlogSection() {
   return (
-    <section className="w-full bg-white py-20 md:py-32 px-6 md:px-12 font-sans overflow-hidden">
+    <section className="w-full bg-white py-20 md:py-18 px-6 md:px-12 font-sans overflow-hidden">
       {/* PURE CSS SERVER-SIDE ANIMATIONS */}
       <style suppressHydrationWarning>{`
         @keyframes fadeInUp {
@@ -24,7 +24,7 @@ export default function BlogSection() {
             ========================================= */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 animate-blog" style={{ animationDelay: "0.1s" }}>
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl text-[#1a1a1a] leading-tight tracking-tight mb-4">
+            <h2 className="text-4xl md:text-5xl text-[#1a1a1a] leading-tight font-semibold tracking-tight mb-4">
               Insights for Lasting <br className="hidden sm:block"/>
               <span className="text-[#ff6a3d]">Transformation</span>
             </h2>

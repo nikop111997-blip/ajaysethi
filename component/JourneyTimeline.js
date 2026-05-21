@@ -104,8 +104,8 @@ const journeySteps = [
             </span>
           </span>
 
-          <h2 className="text-4xl md:text-6xl lg:text-6xl text-slate-900 tracking-tight mb-4 md:mb-6 leading-tight dark:text-gray-50">
-            13 Years of <br className="md:hidden" />
+          <h2 className="text-4xl md:text-6xl lg:text-6xl font-semibold text-slate-900 tracking-tight mb-4 md:mb-6 leading-tight dark:text-gray-50">
+            30 Years of <br className="md:hidden" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff6a3d] to-[#ff4b1f]">
               Transformation.
             </span>

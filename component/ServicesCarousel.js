@@ -59,13 +59,13 @@ export default function ServicesCarousel() {
   ];
 
   return (
-    <section className="w-full py-20 md:py-32 px-6 md:px-12 font-sans overflow-hidden">
+    <section className="w-full py-20 md:pt-16 md:pb-8 px-6 md:px-12 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] leading-tight tracking-tight mb-4 dark:text-gray-50">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] font-semibold leading-tight tracking-tight mb-4 dark:text-gray-50">
               Here’s How I Help You <br />
               <span className="text-[#ff6a3d]">Transform</span>
             </h2>

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <section className="w-full py-20 md:py-32 px-6 md:px-12 overflow-hidden">
+    <section className="w-full py-20 md:py-16 px-6 md:px-12 overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         
         {/* Left Column: Main Image */}
@@ -34,7 +34,7 @@ export default function AboutSection() {
           </div>
 
           {/* Headline */}
-          <h2 className="text-4xl md:text-5xl lg:text-5xl text-[#1a1a1a] dark:text-gray-50 leading-[1.1] tracking-tight mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl text-[#1a1a1a] font-semibold dark:text-gray-50 leading-[1.1] tracking-tight mb-6">
             Meet <span className="text-[#ff6a3d]">Ajay Sethi</span> <br />
             Your Wellness & Business Growth Partner
           </h2>
