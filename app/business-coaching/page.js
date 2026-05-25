@@ -187,7 +187,7 @@ export default function WellnessBusinessCoachingPage() {
       <section className="py-16 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="relative rounded-[1rem] overflow-hidden shadow-2xl border border-neutral-200 bg-neutral-200 aspect-[4/5]">
-            <Image src="/jump.jpg" fill alt="Wellness Business Transformation" className="w-full h-full object-cover grayscale" />
+            <Image src="/jumps.jpg" fill alt="Wellness Business Transformation" className="w-full h-full object-cover grayscale" />
           </motion.div>
           
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>

@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-10">
         
         {/* Left Column: Trust Badges & Typography */}
-        <div className="flex flex-col items-start gap-6 max-w-3xl">
+        <div className="flex flex-col items-start gap-6 max-w-3xl mt-12">
           
          
 
@@ -40,7 +40,7 @@ export default function Hero() {
             
 
             {/* Middle Badge: 50,000+ Lives Impacted  */}
-            <div className="flex items-center gap-3 mt-2">
+            <div className="flex items-center gap-3 mt-2 sm:mt-12">
               <div className="flex -space-x-3">
                 {/* Avatar placeholders - replace src with actual small images */}
                 <img className="w-8 h-8 rounded-full border-2 border-[#1a1a1a]" src="https://i.pravatar.cc/100?img=1" alt="Client" />
@@ -88,7 +88,7 @@ export default function Hero() {
           </div>
 
           {/* Subheadline/Subtext  */}
-          <p className="text-white text-sm w-full sm:max-w-[280px] text-left md:text-left">
+          <p className="text-white text-sm w-full sm:max-w-[280px] text-left md:text-left hidden md:block">
             Through simple systems, consistent action, and community—so transformation becomes sustainable.
           </p>
         </motion.div>

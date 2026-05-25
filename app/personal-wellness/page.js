@@ -351,15 +351,16 @@ export default function PersonalWellnessLandingPage() {
               
               <div className="text-sm font-medium text-[#ff6a3d] uppercase tracking-wider mb-2">{item.step}</div>
               <h3 className="text-xl font-medium mb-3">{item.title}</h3>
-              <p className="text-neutral-800 font-medium">{item.desc}</p>
+              <p className="text-neutral-800 font-medium text-[#ff6a3d]">{item.desc}</p>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> 
       </section>
       </section>
 <TransformationStories />
 <FaqSection />
 <FollowCtaSection />
+
     </div>
   );
 }

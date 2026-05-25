@@ -9,15 +9,14 @@ export default function HeroText() {
   // The phrases to cycle through
   const rotatingPhrases = [
     "Create High-Energy Teams.",
-    "Scale Businesses.",
-    "Transform Your Life."
+    "Grow a Scalable Wellness Business.",
   ];
 
-  // Change the text every 3 seconds
+  // Increased to 4 seconds to give the typing animation time to finish reading
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % rotatingPhrases.length);
-    }, 3000); 
+    }, 4000); 
 
     return () => clearInterval(interval);
   }, [rotatingPhrases.length]);
@@ -27,30 +26,48 @@ export default function HeroText() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-      className="text-white text-4xl md:text-6xl lg:text-6xl leading-[1.0] tracking-tight flex flex-col"
+      // Changed leading to 1.2 to prevent descenders (g, p, y) from getting cut
+      className="text-white text-4xl md:text-6xl lg:text-6xl leading-[1.2] tracking-tight flex flex-col"
     >
       {/* Static Line */}
-      <span className="block mb-2">Build Lasting Health.</span>
+      <span className="block mb-2 font-semibold">Build Lasting Health.</span>
 
-      {/* Animated Rollover Container */}
-      {/* The fixed height (h-[1.2em]) ensures the container doesn't collapse during the transition */}
-      <div className="relative h-[1.1em] w-full overflow-hidden">
-        <AnimatePresence mode="popLayout">
-          <motion.span
+      <div className="relative min-h-[2.5em] md:min-h-[1.5em] w-full">
+        <AnimatePresence mode="wait">
+          <motion.p
             key={index}
-            // Enter from below
-            initial={{ y: "100%", opacity: 0, filter: "blur(4px)" }}
-            // Settle in the center
-            animate={{ y: "0%", opacity: 1, filter: "blur(0px)" }}
-            // Exit by moving up
-            exit={{ y: "-100%", opacity: 0, filter: "blur(4px)" }}
-            // Cinematic easing
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }} 
-            // Absolute positioning allows new text to overlap the old text during the transition
-            className="block absolute top-0 left-0 w-full text-transparent bg-clip-text bg-gradient-to-r font-semibold from-[#ff6a3d] to-[#ffaa8b]"
+            className="absolute top-0 left-0 w-full m-0 bg-clip-text text-transparent bg-gradient-to-r font-semibold from-[#ff6a3d] to-[#ffaa8b]"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={{
+              visible: {
+                transition: { staggerChildren: 0.04 }, // Controls typing speed
+              },
+              hidden: {},
+              exit: {
+                opacity: 0,
+                y: -10,
+                filter: "blur(4px)",
+                transition: { duration: 0.4 },
+              },
+            }}
           >
-            {rotatingPhrases[index]}
-          </motion.span>
+            {/* Split the string and map out each character for the typing effect */}
+            {rotatingPhrases[index].split("").map((char, i) => (
+              <motion.span
+                key={i}
+                variants={{
+                  hidden: { opacity: 0, display: "none" },
+                  visible: { opacity: 1, display: "inline" },
+                }}
+                // whitespace-pre is required so spaces aren't ignored by HTML during mapping
+                className={char === " " ? "whitespace-pre" : ""}
+              >
+                {char}
+              </motion.span>
+            ))}
+          </motion.p>
         </AnimatePresence>
       </div>
     </motion.div>
