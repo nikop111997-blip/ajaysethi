@@ -27,7 +27,7 @@ export default function WhoIsThisFor() {
         "Need predictable systems to scale income"
       ],
       link: "/business-coaching",
-      delay: "0.3s"
+      delay: "0.3s" 
     },
     {
       icon: <Building2 className="w-8 h-8 text-[#ff6a3d]" />,
