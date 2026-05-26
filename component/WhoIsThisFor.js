@@ -17,7 +17,7 @@ export default function WhoIsThisFor() {
       delay: "0.2s"
     },
     {
-      icon: <Briefcase className="w-8 h-8 text-[#ff6a3d]" />,
+      icon: <Briefcase className="w-8 h-8 text-[#ff6a3d]" />, 
       title: "Wellness Professionals",
       subtitle: "Business Coaching",
       description: "For fitness trainers, gym owners, and coaches who are highly skilled but feel trapped in the exhausting 'time-for-money' hustle.",
