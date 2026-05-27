@@ -17,6 +17,19 @@ export default function WhoIsThisFor() {
       delay: "0.2s"
     },
     {
+      icon: <Building2 className="w-8 h-8 text-[#ff6a3d]" />,
+      title: "Corporate Teams",
+      subtitle: "Organizational Wellness",
+      description: "For forward-thinking companies that understand employee health is a core business advantage, not just an HR perk.",
+      bullets: [
+        "Combating high employee burnout",
+        "Looking to boost daily productivity",
+        "Wanting to build a resilient team culture"
+      ],
+      link: "/corporate-wellness",
+      delay: "0.4s"
+    },
+    {
       icon: <Briefcase className="w-8 h-8 text-[#ff6a3d]" />, 
       title: "Wellness Professionals",
       subtitle: "Business Coaching",
@@ -29,19 +42,7 @@ export default function WhoIsThisFor() {
       link: "/business-coaching",
       delay: "0.3s" 
     },
-    {
-      icon: <Building2 className="w-8 h-8 text-[#ff6a3d]" />,
-      title: "Corporate Teams",
-      subtitle: "Organizational Wellness",
-      description: "For forward-thinking companies that understand employee health is a core business advantage, not just an HR perk.",
-      bullets: [
-        "Combating high employee burnout",
-        "Looking to boost daily productivity",
-        "Wanting to build a resilient team culture"
-      ],
-      link: "/corporate-wellness",
-      delay: "0.4s"
-    }
+    
   ];
 
   return (

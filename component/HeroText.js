@@ -6,13 +6,11 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function HeroText() {
   const [index, setIndex] = useState(0);
 
-  // The phrases to cycle through
   const rotatingPhrases = [
     "Create High-Energy Teams.",
-    "Grow a Scalable Wellness Business.",
+    "Grow a Scalable Business.", // Slightly shortened to ensure it fits nicely on one line
   ];
 
-  // Increased to 4 seconds to give the typing animation time to finish reading
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % rotatingPhrases.length);
@@ -26,13 +24,13 @@ export default function HeroText() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-      // Changed leading to 1.2 to prevent descenders (g, p, y) from getting cut
-      className="text-white text-4xl md:text-6xl lg:text-6xl leading-[1.2] tracking-tight flex flex-col"
+      className="text-white text-4xl md:text-5xl lg:text-6xl leading-[1.2] tracking-tight flex flex-col w-full"
     >
-      {/* Static Line */}
-      <span className="block mb-2 font-semibold">Build Lasting Health.</span>
+      {/* Line 1: Static Line */}
+      <span className="block font-semibold">Build Lasting Health.</span>
 
-      <div className="relative min-h-[2.5em] md:min-h-[1.5em] w-full">
+      {/* Line 2: Rotating Line (Fixed height strictly holds it to a 2nd line without jumping) */}
+      <div className="relative h-[1.3em] w-full overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.p
             key={index}
@@ -42,7 +40,7 @@ export default function HeroText() {
             exit="exit"
             variants={{
               visible: {
-                transition: { staggerChildren: 0.04 }, // Controls typing speed
+                transition: { staggerChildren: 0.04 },
               },
               hidden: {},
               exit: {
@@ -53,7 +51,6 @@ export default function HeroText() {
               },
             }}
           >
-            {/* Split the string and map out each character for the typing effect */}
             {rotatingPhrases[index].split("").map((char, i) => (
               <motion.span
                 key={i}
@@ -61,7 +58,6 @@ export default function HeroText() {
                   hidden: { opacity: 0, display: "none" },
                   visible: { opacity: 1, display: "inline" },
                 }}
-                // whitespace-pre is required so spaces aren't ignored by HTML during mapping
                 className={char === " " ? "whitespace-pre" : ""}
               >
                 {char}

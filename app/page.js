@@ -25,7 +25,7 @@ export default function Home() {
       <StrugglesSection />
       <AboutSection />
       <ServicesCarousel />
-      <CorporateChallenges />
+     
       <ProcessSection />
       <VideoJourneySection />
       <HealthAssessment />

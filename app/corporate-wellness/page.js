@@ -25,6 +25,7 @@ import StatsSection from '@/component/StatsSection';
 import FaqSection from '@/component/FaqSection';
 import FollowCtaSection from '@/component/FollowCtaSection';
 import TransformationStories from '@/component/TransformationStories';
+import CorporateChallenges from '@/component/CorporateChallenges';
 
 export default function CorporateWellnessLandingPage() {
   const [openFaq, setOpenFaq] = useState(0);
@@ -215,7 +216,7 @@ export default function CorporateWellnessLandingPage() {
           </motion.div>
         </div>
       </section>
-
+<CorporateChallenges />
       {/* =========================================
           4. STATS BANNER
           ========================================= */}
@@ -278,43 +279,77 @@ export default function CorporateWellnessLandingPage() {
       {/* =========================================
           6. PROGRAM / PRICING BANNER
           ========================================= */}
-      <section className="py-12 px-6 max-w-7xl mx-auto">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-[#ff6a3d] rounded-[1rem] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden border border-[#c1e1cd]">
-          <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/40 to-transparent"></div>
-          
-          <div className="relative z-10 flex-1">
-            <span className="text-sm font-medium tracking-widest text-[#fff7ee] uppercase mb-2 block">Flexible & Customised Formats</span>
-            <h2 className="text-3xl md:text-5xl font-medium text-neutral-50 mb-6">Corporate Wellness Programs</h2>
-            <p className="text-lg text-neutral-100 mb-6 max-w-lg font-medium">
-              Delivered based on your organization's specific needs—available Online, Offline, or Hybrid.
-            </p>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-              <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Keynotes & Awareness Sessions</li>
-              <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Interactive Workshops</li>
-              <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> 30-Day Living Programs & Challenges</li>
-              <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Leadership Energy Sessions</li>
-              <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Corporate Retreats & Experiences</li>
-              <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Health Audit Camps</li>
-            </ul>
-          </div>
+    <section className="py-12 px-6 max-w-7xl mx-auto">
+  <motion.div 
+    initial="hidden" 
+    whileInView="visible" 
+    viewport={{ once: true }} 
+    variants={fadeUp} 
+    className="bg-[#ff6a3d] rounded-[1rem] p-8 md:p-12 relative overflow-hidden border border-[#c1e1cd]"
+  >
+    <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/40 to-transparent"></div>
+    
+    {/* Left Side Content */}
+    <div className="relative z-10 flex-1 w-full">
+      <span className="text-sm font-medium tracking-widest text-[#fff7ee] uppercase mb-2 block">
+        Flexible & Customised Formats
+      </span>
+      <h2 className="text-3xl md:text-5xl font-medium text-neutral-50 mb-6">
+        Corporate Wellness Programs
+      </h2>
+      <p className="text-lg text-neutral-100 mb-6 max-w-7xl font-medium">
+        Delivered based on your organization's specific needs—available Online, Offline, or Hybrid.
+      </p>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+        <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Keynotes & Awareness Sessions</li>
+        <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Interactive Workshops</li>
+        <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> 30-Day Living Programs & Challenges</li>
+        <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Leadership Energy Sessions</li>
+        <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Corporate Retreats & Experiences</li>
+        <li className="flex items-center gap-2 font-medium text-neutral-50"><CheckCircle2 className="w-5 h-5 text-[#eeeeee]" /> Health Audit Camps</li>
+      </ul>
+    </div>
 
-          <div className="relative z-10 flex flex-col items-center md:items-start bg-white p-8 rounded-xl shadow-xl border border-white/50 w-full md:w-auto min-w-[340px]">
-            <div className="text-sm font-medium text-[#ff6a3d] uppercase tracking-wider mb-2">Investment Scope</div>
-            <div className="text-3xl lg:text-4xl font-medium text-neutral-900 mb-2">₹50K - ₹10L+</div>
-            <div className="text-sm font-medium text-neutral-800 mb-6">Customized based on employee count, format, and involvement.</div>
-            
-            <div className="space-y-2 w-full mb-6 text-sm text-neutral-800 font-medium">
-              <div className="flex justify-between border-b pb-2"><span>One-time Sessions</span> <span>90–120 mins</span></div>
-              <div className="flex justify-between border-b pb-2"><span>Short-term Programs</span> <span>30–90 days</span></div>
-              <div className="flex justify-between pb-1"><span>Long-term Engagement</span> <span>3–12 months</span></div>
-            </div>
+    {/* Right Side: Pricing Cards Container */}
+    <div className="relative z-10 flex flex-col md:flex-row gap-6 w-full xl:w-auto shrink-0">
+      
+      {/* Card 1: Corporate Programs */}
+      <div className="flex flex-col bg-white p-8 rounded-xl shadow-xl border border-white/50 w-full md:w-1/2 xl:w-auto xl:min-w-[340px]">
+        <div className="text-sm font-medium text-[#ff6a3d] uppercase tracking-wider mb-2">Corporate Programs</div>
+        <div className="text-3xl lg:text-4xl font-medium text-neutral-900 mb-2">₹50K - ₹10L+</div>
+        <div className="text-sm font-medium text-neutral-800 mb-6">Customized based on employee count, format, and involvement.</div>
+        
+        <div className="space-y-2 w-full mb-6 text-sm text-neutral-800 font-medium grow">
+          <div className="flex justify-between border-b pb-2"><span>One-time Sessions</span> <span>90–120 mins</span></div>
+          <div className="flex justify-between border-b pb-2"><span>Short-term Programs</span> <span>30–90 days</span></div>
+          <div className="flex justify-between pb-1"><span>Long-term Engagement</span> <span>3–12 months</span></div>
+        </div>
 
-            <button className="open-booking-modal w-full py-4 bg-[#0f172a] text-white font-medium rounded-lg hover:bg-neutral-800 transition-all shadow-lg flex items-center justify-center gap-2">
-              Let's Talk <ArrowRight className="w-5 h-5" />
-            </button>
-          </div>
-        </motion.div>
-      </section>
+        <button className="open-booking-modal mt-auto w-full py-4 bg-[#0f172a] text-white font-medium rounded-lg hover:bg-neutral-800 transition-all shadow-lg flex items-center justify-center gap-2">
+          Let's Talk <ArrowRight className="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Card 2: Events & Seminars */}
+      <div className="flex flex-col bg-white p-8 rounded-xl shadow-xl border border-white/50 w-full md:w-1/2 xl:w-auto xl:min-w-[340px]">
+        <div className="text-sm font-medium text-[#ff6a3d] uppercase tracking-wider mb-2">Events & Seminars</div>
+        <div className="text-3xl lg:text-4xl font-medium text-neutral-900 mb-2">₹1L - ₹5L+</div>
+        <div className="text-sm font-medium text-neutral-800 mb-6">Ideal for large-scale corporate summits, offsites, and industry conferences.</div>
+        
+        <div className="space-y-2 w-full mb-6 text-sm text-neutral-800 font-medium grow">
+          <div className="flex justify-between border-b pb-2"><span>Keynote Speech</span> <span>60–90 mins</span></div>
+          <div className="flex justify-between border-b pb-2"><span>Half-day Workshop</span> <span>3–4 hours</span></div>
+          <div className="flex justify-between pb-1"><span>Full-day Seminar</span> <span>6–8 hours</span></div>
+        </div>
+
+        <button className="open-booking-modal mt-auto w-full py-4 bg-[#0f172a] text-white font-medium rounded-lg hover:bg-neutral-800 transition-all shadow-lg flex items-center justify-center gap-2">
+          Let's Talk <ArrowRight className="w-5 h-5" />
+        </button>
+      </div>
+
+    </div>
+  </motion.div>
+</section>
 
       {/* =========================================
           7. HOW WE WORK (4 Steps)

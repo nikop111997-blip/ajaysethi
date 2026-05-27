@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="w-full bg-white px-4 md:px-8 pb-4 md:pb-8">
       
       {/* The main dark container with rounded corners to match the reference */}
-      <div className="max-w-7xl mx-auto bg-[#101010] rounded-[1rem] p-8 md:p-12 flex flex-col justify-between min-h-[400px]">
+      <div className="max-w-7xl mx-auto bg-[#101010] rounded-lg p-8 md:p-12 flex flex-col justify-between min-h-[400px]">
         
         {/* =========================================
             TOP SECTION: Logo, Links & Socials

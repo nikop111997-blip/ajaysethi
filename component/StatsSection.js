@@ -56,12 +56,6 @@ export default function StatsSection() {
       title: "Coaches Trained",
       description: "Building the next generation of wellness leaders",
     },
-    {
-      id: 4,
-      value: "70,000+",
-      title: "Kgs Weight Loss",
-      description: "Sustainable physical transformation in just the last 5 years",
-    },
   ];
 
   const containerVariants = {
@@ -85,29 +79,29 @@ export default function StatsSection() {
   };
 
   return (
-    <section className="w-full bg-white py-24 md:pt-12 md:pb-6 px-4 md:px-8 font-sans border-t border-gray-100">
+    <section className="w-full bg-white py-18 md:pt-12 md:pb-6 px-4 md:px-8 font-sans border-t border-gray-100">
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-0"
         >
-          {stats.map((stat) => (
+          {stats.map((stat, index) => (
             <motion.div
               key={stat.id}
               variants={itemVariants}
               // Added Hover Classes Here: padding, rounded corners, transitions, transform, and shadow
-              className="flex flex-col items-start text-left group p-8 rounded-3xl hover:bg-gray-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] hover:bg-gray-50/50 cursor-default"
+              className={`flex flex-col items-start ${index==0 && 'rounded-l-lg'} ${index==2 && 'rounded-r-lg'} text-left group p-8 sm:bg-gray-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] hover:bg-[#ff6a3d] cursor-default`}
             >
-              <h2 className="text-5xl md:text-5xl font-semibold mb-4 tracking-tight dark:text-gray-950 transition-transform duration-500 group-hover:scale-105 origin-left">
+              <h2 className="text-4xl md:text-4xl font-semibold mb-4 tracking-tight dark:text-gray-950 transition-transform duration-500 group-hover:scale-105 origin-left">
                 <AnimatedCounter value={stat.value} />
               </h2>
-              <h3 className="text-xl font-bold text-gray-900 mb-2 transition-colors duration-300">
+              <h3 className="text-lg font-bold text-gray-900 mb-2 transition-colors duration-300">
                 {stat.title}
               </h3>
-              <p className="text-lg text-gray-800 leading-relaxed max-w-[340px]">
+              <p className="text-md text-gray-800 leading-relaxed max-w-[340px]">
                 {stat.description}
               </p>
             </motion.div>
