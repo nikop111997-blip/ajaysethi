@@ -83,7 +83,7 @@ export default function Navbar() {
 >
   <Image
     key={isScrolled ? "logo-dark" : "logo-light"}
-    src={isScrolled || !isDarkRoute || isMobileMenuOpen? "/logo.png" : "/2.png"}
+    src={isScrolled || !isDarkRoute || isMobileMenuOpen? "/singlogo.png" : "/whitesign.png"}
     alt="logo ajay sethi"
     height={80}
     width={200}
