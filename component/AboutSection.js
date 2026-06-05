@@ -13,7 +13,7 @@ export default function AboutSection() {
         {/* Left Column: Main Image */}
         <div className="relative w-full aspect-[4/5] md:aspect-square lg:aspect-[4/5] rounded-[2rem] overflow-hidden bg-gray-100 shadow-sm">
   <Image
-    src="/abouts.jpg"
+    src="/wes.jpg"
     alt="Ajay Sethi - Wellness Consultant"
     fill
     priority
@@ -40,10 +40,27 @@ export default function AboutSection() {
           </h2>
 
           {/* Paragraph (From Content Brief) */}
-          <p className="text-gray-800 text-lg md:text-xl leading-relaxed mb-10 max-w-xl dark:text-gray-50">
-            I'm a former professional athlete, entrepreneur, and founder of Kayapalat Wellness. For over 30 years, I've worked with athletes, professionals, and everyday individuals trying to answer one question: Why do capable people struggle to stay healthy, fit, and happy?
+          <p className="text-gray-800 text-lg leading-relaxed mb-4 max-w-xl dark:text-gray-50">
+           Former professional athlete, entrepreneur, and founder of Kayapalat Wellness.
           </p>
-
+<p className="text-gray-800 text-lg leading-relaxed mb-4 max-w-xl dark:text-gray-50">
+           For over 30 years, Ajay has worked with individuals, professionals, athletes, and organizations helping them build healthier, more active, and more fulfilling lives.</p>
+<p className="text-gray-800 text-lg font-bold leading-relaxed mb-2 max-w-xl dark:text-gray-50">
+           Along the way, he realised something important: </p>
+           <ul className="list-disc list-inside mb-6">
+             <li className="text-gray-800 text-md leading-relaxed  max-w-xl dark:text-gray-50">
+               Most people don’t fail because they lack discipline or motivation.
+             </li>
+             <li className="text-gray-800 text-md leading-relaxed max-w-xl dark:text-gray-50">
+          
+           They fail because the systems they follow feel stressful, restrictive, and impossible to sustain in real life.</li>
+            <li className="text-gray-800 text-md leading-relaxed max-w-xl dark:text-gray-50">
+           That realization eventually led to the creation of Kayapalat—a simple, structured, community-driven approach that makes health, movement, and wellbeing feel natural, enjoyable, and deeply integrated into everyday life.
+         </li>
+         </ul>
+<p className="text-gray-800 text-lg leading-relaxed mb-10 max-w-xl dark:text-gray-50">
+Because when wellness becomes a way of living instead of a task to complete<strong>{" "}going back to your old self becomes almost impossible.</strong>
+          </p>
           {/* CTA Button - CSS Hover animations still work perfectly on server components! */}
           <Link
               href="/about"
@@ -58,33 +75,6 @@ export default function AboutSection() {
 </div>
             </Link>
 
-          {/* Bottom Area: Stats & Secondary Image */}
-          <div className="hidden sm:block">
-          <div className="w-full mt-16 flex flex-col sm:flex-row justify-between items-end gap-10 ">
-            {/* Stats */}
-            <div className="flex gap-12">
-              <div className="flex flex-col">
-                <span className="text-4xl font-bold text-[#1a1a1a] dark:text-gray-50 mb-1">18+</span>
-                <span className="text-sm text-gray-800 dark:text-gray-200 font-medium">Countries</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-4xl font-bold text-[#1a1a1a] dark:text-gray-50 mb-1">400+</span>
-                <span className="text-sm text-gray-800 dark:text-gray-200 font-medium">Citie Covered</span>
-              </div>
-            </div>
-
-            {/* Secondary Image (like the reference) */}
-            <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden bg-gray-100 shadow-lg flex-shrink-0">
-               {/* Replace src with an action shot or secondary portrait */}
-              <Image
-                src="/tali.webp" 
-                alt="Ajay Sethi Coaching"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
         </div>
       </div>
     </section>
