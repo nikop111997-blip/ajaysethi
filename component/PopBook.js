@@ -183,7 +183,7 @@ export default function BookingComponent() {
 
     try {
       const response = await fetch(
-        "https://kayakalap.vercel.app/api/contact",
+        "/api/contact",
         {
           method: "POST",
           headers: {
@@ -243,15 +243,13 @@ export default function BookingComponent() {
           className={`
             w-11 h-11 rounded-md cursor-pointer text-sm transition-all
             flex items-center justify-center
-            ${
-              isSelected
-                ? "bg-[#ff6a3d] text-white shadow-lg"
-                : "hover:bg-gray-100 text-gray-700"
+            ${isSelected
+              ? "bg-[#ff6a3d] text-white shadow-lg"
+              : "hover:bg-gray-100 text-gray-700"
             }
-            ${
-              !isSelected && isToday
-                ? "font-bold text-[#ff6a3d]"
-                : ""
+            ${!isSelected && isToday
+              ? "font-bold text-[#ff6a3d]"
+              : ""
             }
           `}
         >
