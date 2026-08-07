@@ -17,7 +17,7 @@ const navLinks = [
   { name: "Events", href: "/events" },
 ];
 
-const darkRoutes = ["/", "/about", "/success-stories", "/events", "/corporate-wellness", "/business-coaching"];
+const darkRoutes = [ "/", "/dummy", "/about", "/success-stories", "/events", "/corporate-wellness", "/business-coaching"];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -73,7 +73,7 @@ export default function Navbar() {
             : "bg-transparent py-3"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-2 md:px-12 flex justify-between items-center">
+        <div className="px-0 md:px-12 flex justify-between items-center">
           
           {/* Logo with slight hover lift */}
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
@@ -88,6 +88,7 @@ export default function Navbar() {
     height={80}
     width={200}
     priority
+    className="h-auto w-auto object-contain -ml-3"
   />
 </Link>
           </motion.div>

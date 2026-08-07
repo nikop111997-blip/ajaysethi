@@ -37,16 +37,16 @@ export default function FaqSection() {
   };
 
   return (
-    <section className="w-full bg-white py-20 md:py-16 px-6 md:px-12 font-sans">
+    <section className="w-full bg-white py-20 md:pb-10 px-6 md:px-12 font-sans">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
         
         {/* =========================================
             LEFT COLUMN: Sticky Header & CTA
             ========================================= */}
         <div className="lg:col-span-5 flex flex-col lg:sticky lg:top-32">
-          <span className="text-gray-400 text-sm font-medium tracking-wide uppercase mb-4 ">
-            FAQ
-          </span>
+         <div className="inline-block w-fit border border-dashed border-[#ff6b42]/50 bg-[#ff6b42]/20 text-[#ff6b42] px-4 py-1.5 text-sm font-medium mb-6 shadow-sm">
+            FAQs
+          </div>
           
           <h3 className="text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a] leading-[1.1] tracking-tight mb-6 font-semibold">
             Frequently <br className="hidden md:block" />
@@ -60,10 +60,10 @@ export default function FaqSection() {
           {/* Contact Button mimicking the reference image */}
           <Link
             href="mailto:support@kayapalat.in"
-            className="inline-flex items-center w-80 justify-between border border-gray-300 rounded-xl pl-6 pr-4 py-2 hover:border-gray-400 transition-colors group"
+            className="inline-flex items-center w-80 justify-between border border-dashed border-[#ff6b42]/50 pl-6 pr-4 py-2 hover:border-gray-400 transition-colors group"
           >
-            <span className="text-[#1a1a1a] font-medium mr-6">Send e-mail</span>
-            <div className="bg-[#1a1a1a] rounded-xl relative overflow-hidden flex items-center justify-center w-10 h-10">
+            <span className="text-[#ff6b42]/60 font-medium mr-6">Send e-mail</span>
+            <div className="bg-[#ff6b42] relative overflow-hidden flex items-center justify-center w-10 h-10">
   <ArrowRight className="w-5 h-5 text-white absolute transition-transform duration-300 ease-in-out group-hover:translate-x-[150%]" />
   
   
