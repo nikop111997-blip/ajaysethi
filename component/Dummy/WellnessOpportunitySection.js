@@ -196,7 +196,7 @@ function IndiaInteractiveMap() {
           <div className="flex flex-wrap items-center justify-between gap-2">
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-sm font-bold text-slate-900">
+                <span className="text-sm font-bold text-slate-900"> 
                   {hoveredState.name}
                 </span>
                 <span
