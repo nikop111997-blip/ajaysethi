@@ -9,6 +9,7 @@ import ThreePillarSystem from "@/component/Dummy/ThreePillarSystem";
 import TrustBar from "@/component/Dummy/TrustBar";
 import WellnessCoachingOffer from "@/component/Dummy/WellnessCoachingOffer";
 import WellnessCta from "@/component/Dummy/WellnessCta";
+import WellnessOpportunitySection from "@/component/Dummy/WellnessOpportunitySection";
 import FaqSection from "@/component/FaqSection";
 
 export default function Page() {
@@ -20,6 +21,7 @@ export default function Page() {
         <AboutAjay />
         <AgitationSection />
         <ThreePillarSystem />
+        <WellnessOpportunitySection />
         <WellnessCoachingOffer />
         <SignatureFramework />
         <SuccessStories />

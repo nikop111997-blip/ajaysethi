@@ -8,27 +8,62 @@ import Link from "next/link";
 export default function FaqSection() {
   // FAQs crafted from the core philosophies and services in the Content Brief
   const faqs = [
-    {
-      question: "Do I need to follow extreme diets or workouts?",
-      answer: "No. Most people fail because they rely on extreme workouts or hunger-prone diet plans. Our approach focuses on simple systems, daily guidance, and habit-based transformation that fits seamlessly into your real, everyday life.",
-    },
-    {
-      question: "What is the KP PRO Personal Wellness Membership?",
-      answer: "It is a simple, structured system to help you build lasting health, fitness, and happiness. It includes daily live coaching sessions, structured weekly themes, and community accountability so you can stop starting and stopping.",
-    },
-    {
-      question: "Who is the Wellness Business Coaching for?",
-      answer: "It is designed for fitness trainers, gym owners, yoga instructors, and wellness professionals who are skilled but feel stuck in time-for-money models. We help you build a clear offer, attract clients, and create predictable monthly income.",
-    },
-    {
-      question: "How do your Corporate Wellness programs work?",
-      answer: "We design practical wellness systems tailored to your organization—ranging from keynote talks to 30-Day Wellness Living Programs. The focus is on improving energy, productivity, and culture without disrupting daily work.",
-    },
-    {
-      question: "Are the coaching sessions online or in-person?",
-      answer: "We offer flexible formats. The Personal Wellness program is fully online and accessible from anywhere. Corporate and Business Coaching programs can be delivered online, offline, or in a hybrid format depending on your specific needs.",
-    }
-  ];
+  {
+    question: "Do I need any prior experience to become a Wellness Coach?",
+    answer:
+      "No. The program is designed for people from different backgrounds and does not require prior industry experience. Whether you are starting a new career, looking for a second income, or already have experience in health, fitness, nutrition, sports, or related fields, you can learn and build your skills through the program.",
+  },
+  {
+    question: "What will I learn in the Wellness Coach course?",
+    answer:
+      "The course covers the key areas required to become a Wellness Coach, including wellness, nutrition, exercise, mindset, marketing, sales, and practical business skills. You are also coached and mentored by experienced Coaches and become part of a community where you can learn from successful coaches.",
+  },
+  {
+    question: "Can I work as a Wellness Coach part-time?",
+    answer:
+      "Yes. The Wellness Coach Academy model is designed to provide flexibility. You can work part-time or full-time and build your wellness coaching activities around your existing schedule.",
+  },
+  {
+    question: "Can I work as a Wellness Coach from home?",
+    answer:
+      "Yes. The program supports both online and offline opportunities. You can work with clients from home, an office, your own wellness center, or other locations depending on how you choose to build your coaching business.",
+  },
+  {
+    question: "Can I start my own Wellness Coaching business?",
+    answer:
+      "Yes. The program is designed to help you develop the knowledge, coaching skills, marketing skills, and business understanding needed to start your own online or offline wellness coaching practice or wellness center.",
+  },
+  {
+    question: "What kind of support do I receive during the program?",
+    answer:
+      "The program includes coaching and mentorship from experienced Coaches, support material, sales and marketing training, and access to a community where you can learn best practices and receive guidance as you develop your wellness coaching business.",
+  },
+  {
+    question: "Can I start earning while I am learning?",
+    answer:
+      "The Academy's model is designed around learning through practical implementation. You can begin engaging with the business and applying what you learn while completing the course, under the guidance and supervision of experienced mentors.",
+  },
+  {
+    question: "Who can join Wellness Coach Academy?",
+    answer:
+      "The program is suitable for people who want to build a meaningful career or business in wellness, including fitness professionals, nutrition and health professionals, sports professionals, people looking for a second income, students, homemakers, retired individuals, entrepreneurs, and people looking for a new career direction.",
+  },
+  {
+    question: "What can I do after completing the course?",
+    answer:
+      "After completing the course, you can work independently as a Wellness Coach, continue working with the Academy, develop clients online or offline, or build your own wellness coaching business or wellness center.",
+  },
+  {
+    question: "Is the Wellness Coach opportunity limited to one location?",
+    answer:
+      "No. The Academy's model is designed to support both local and online business opportunities. You can develop clients online as well as offline and build your wellness coaching business in different locations.",
+  },
+  {
+    question: "How does the Wellness Coach Academy program work?",
+    answer:
+      "You enroll in the course, start learning the core wellness and business skills, apply what you learn with guidance from experienced mentors, and develop your coaching and business capabilities. The goal is to help you move from learning to practical implementation and eventually build your own wellness coaching business.",
+  },
+];
 
   const [openIndex, setOpenIndex] = useState(0); // First item open by default
 
